@@ -1,0 +1,25 @@
+<!--Page/Nav/PayMent/payment.wxml-->
+<view class='payWrap'>
+  <text class='title'>订单标题</text>
+  <view class='content'>
+    <view class='paymoney'>
+      <text>付款金额</text>
+      <text>{{paymoney}}</text>
+      <view class='clear'></view>
+    </view>
+    <view class='paydetails' wx:for='{{paydetails}}'>
+      <text>{{item.type}}</text>
+      <block wx:if='{{item.signUpall}}'>
+        <text style='float:right'> /{{item.signUpall}}</text>
+      </block>
+      <text class='val'>{{item.value}}</text> 
+      <view class='clear'></view>
+    </view>
+  </view>
+  <button class='payment' bindtap='goWxPay' hover-class='none'>
+    <icon type='success' size='40'></icon> 
+    <text>微信支付</text>
+  </button>
+</view>
+
+

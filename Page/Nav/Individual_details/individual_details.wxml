@@ -1,0 +1,66 @@
+<!--Page/Nav/Individual_details/individual_details.wxml  单项赛-详情页-->
+<view class='body'>
+  <view class='head'>("鱼飞"网球俱乐部邀请公开赛) 2019/06/09周日8:00 (4月份) - 合肥奥体中心网球场</view>
+
+  <view class='content'>
+    <view class='content_wrap'>
+      <view class='content_line'>
+        <icon class='iconfont iconshijian2'></icon>
+        <text class='content_times'>时间: 2019-06-09 08:00</text>
+      </view>
+      <view class='content_line'>
+        <icon class='iconfont iconchengshi'></icon>
+        <text class='content_city'>城市: 合肥</text>
+      </view>
+      <view class='content_line'>
+        <icon class='iconfont icondidian'></icon>
+        <text class='content_place'>场馆: 合肥奥体中心网球俱乐部</text>
+      </view>
+      <view class='content_line'>
+        <icon class='iconfont iconjibie'></icon>
+        <text class='content_jibie'>级别: 单打</text>
+      </view>
+      <view class='content_line'>
+        <icon class='iconfont iconfeiyong'></icon>
+        <text class='content_money'>费用: 60元/人</text>
+      </view>
+      <view class='content_line'>
+        <navigator url='/Page/Nav/Player/Individual_player' open-type='navigate' hover-class='none'>
+          <icon class='iconfont iconbaoming'></icon>
+          <text class='content_baom'>已报名: 6/16人</text>
+          <icon class='iconfont iconright' style='float:right'></icon>
+          <text style='clear:both'></text>
+        </navigator>
+      </view>
+      <view class='content_line'>
+        <navigator url='/Page/Nav/Comment/comment' open-type='navigate' hover-class='none'>
+          <icon class='iconfont iconpinglun'></icon>
+          <text class='content_pinglun'>评论: (0)</text>
+          <icon class='iconfont iconright' style='float:right'></icon>
+          <text style='clear:both'></text>
+        </navigator>
+      </view>
+      <view class='content_line'>
+        <navigator url='' open-type='navigate' hover-class='none'>
+          <icon class='iconfont iconbaoming'></icon>
+          <text class='content_zhangc'>比赛章程(报名前请您务必阅读此章程)</text>
+          <icon class='iconfont iconright' style='float:right'></icon>
+          <text style='clear:both'></text>
+        </navigator>
+      </view>
+    </view>
+
+    <view class='content_btns'>
+      <button class='look_bfen' bindtap='lookBfen'>查看比分</button>
+<<<<<<< HEAD
+      <button class='lu_bfen' disabled='disabled'>录比分</button>
+=======
+      <button class='lu_bfen' bindtap='luBfen' disabled='disabled'>录比分</button>
+>>>>>>> 赛事小程序
+    </view>
+    <view class='content_btns'>
+      <button class='signUp'>我要报名</button>
+    </view>
+  </view>
+
+</view>

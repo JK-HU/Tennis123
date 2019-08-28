@@ -1,0 +1,11 @@
+<!--Page/Group/GroupNav/CsNameList/CszDetails/cszdetails.wxml 参赛者名单参赛者详情页  -->
+<view class='body'>
+  <view class='wrap'>
+    <view class='mes'>
+      <text class='mesName'>姓名</text>
+      <text class='mesAge'>年龄</text>
+      <input class='mesIntrduce' disabled='true'></input>
+    </view>
+    <view class='images'><image src=''></image></view>
+  </view>
+</view>

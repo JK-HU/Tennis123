@@ -1,0 +1,6 @@
+<!--Page/Nav/Comment/comment.wxml 评论页-->
+<view class='body'>
+  <text>添加评论:</text>
+  <textarea value='' placeholder='请输入你的评论'  maxlength='200' placeholder-style='font-size:16px;color:#999'></textarea>
+  <button class='plun'>评论</button>
+</view>

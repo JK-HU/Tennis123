@@ -1,0 +1,56 @@
+/* Page/Setting/RetrievePsword/retrievepsword.wxss */
+
+.swiper-tab{
+  width: 100%;
+  border-bottom: 1rpx solid #ccc;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 14px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.swiper-tab-item{
+  width: 33%; 
+  color:#434343;
+}
+.active{
+  color:#2196f3;
+  border-bottom: 1rpx solid #2196f3;
+}
+swiper{
+ text-align: center;
+ height: 400px;
+ 
+}
+
+/* 第一步 */
+.btn{display: block;width: 80%;line-height: 80rpx;margin: 60rpx auto}
+.FirstStep{width: auto;height: auto;margin-top: 10rpx;}
+.FirstStep .wrap{width: 85%;line-height: 60rpx;font-size: 28rpx;padding: 6rpx 16rpx;margin: 0 auto;border-bottom: 1px solid #ddd}
+.FirstStep .wrap text{float: left}
+.FirstStep .wrap input{display: inline-block;width: 70%;height:60rpx;float: right;color: #000;caret-color: #2196f3;text-align: left}
+.FirstStep .wrap .vertext{display: inline-block;width: 10%;height: 60rpx;text-align: center;float: right}
+.FirstStep .wrap .verif{width: 60%;}
+/* 第二部 */
+.SecondStep{width: auto;height: auto;margin-top: 10rpx;}
+.SecondStep .wrap{width: 85%;line-height: 60rpx;font-size: 28rpx;padding: 6rpx 16rpx;margin: 0 auto;border-bottom: 1px solid #ddd}
+.SecondStep .wrap text{float: left}
+.SecondStep .wrap input{display: inline-block;width: 50%;height:60rpx;float: left;color: #000;caret-color: #2196f3;text-align: left;padding: 0 12rpx;}
+.SecondStep .wrap button{float: right}
+/* 第三部 */
+.ThirdStep{width: auto;height: auto;margin-top: 10rpx;}
+.ThirdStep .wrap{width: 85%;line-height: 60rpx;font-size: 28rpx;padding: 6rpx 16rpx;margin: 0 auto;border-bottom: 1px solid #ddd}
+.ThirdStep .wrap text{float: left}
+.ThirdStep .wrap input{display: inline-block;width: 50%;height:60rpx;float: left;color: #000;caret-color: #2196f3;text-align: left;padding: 0 12rpx;}
+
+
+
+
+
+
+
+
+
+

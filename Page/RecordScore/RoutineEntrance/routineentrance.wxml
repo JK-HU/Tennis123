@@ -1,0 +1,10 @@
+<!--Page/RecordScore/RoutineEntrance/routineentrance.wxml  录比分入口页面  -->
+<view class='wrap'>
+
+  <view wx:for="{{tranceData}}">
+    <navigator url='{{item.url}}' open-type='navigate' hover-class='none'>
+      <button class='entrace' hover-class='none'>{{item.name}}</button>
+    </navigator>
+  </view>
+
+</view>

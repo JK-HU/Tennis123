@@ -1,0 +1,53 @@
+<!--Page/Nav/Navtion/navtion.wxml-->
+<!-- 页面导航 -->
+<view class='body'>
+
+<!-- 登录注册 -->
+<view style="display:{{isLogin?'none':'block'}}">
+  <button class='login' bindtap='bindLogins'>登录/注册</button>
+  <text class='login_tit'>{{navTit}}</text>
+</view>
+<!-- 登录注册结束 -->
+
+<!-- 轮播图 -->
+<view style="display:{{isLogin?'block':'none'}}">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!-- 轮播图结束 -->
+</view>
+
+<!-- 导航列表 -->
+<view class='nav' style='margin-top:30px'>
+  <view class='nav_chil' wx:for="{{navList}}">
+    <navigator url="{{item.url}}" open-type="navigate" hover-class='none'>
+      <text class='{{item.icon}}'></text>
+      <text class='icon_txt'>{{item.text}}</text>
+    </navigator>
+  </view>
+</view>
+<view class='nav'>
+  <view class='nav_chil' wx:for="{{navListb}}">
+  <navigator url='{{item.url}}' open-type='navigate' hover-class='none'>
+    <text class='{{item.icon}}'></text>
+    <text class='icon_txt'>{{item.text}}</text>
+  </navigator>
+  </view>
+</view>
+<view class='nav' style='border-bottom: 1px solid #eee;'>
+  <view class='nav_chil' wx:for="{{navListc}}">
+    <navigator url='{{item.url}}'open-type='navigate' hover-class='none'>
+      <text class='{{item.icon}}'></text>
+      <text class='icon_txt'>{{item.text}}</text>
+    </navigator>
+  </view>
+</view>
+<!-- 导航列表结束 -->
+
+<!-- 页面导航结束 -->
+

@@ -1,0 +1,156 @@
+<!--Page/Nav/RecordScoreDetails/recordscoredetails.wxml 赛事列表进去的录比分页面 -->
+<view class='body'>
+  <view>
+  
+      <!-- 小组赛 和 淘汰赛 -->
+      <view class='btns'>
+        <button bindtap="miniMatch" type="default" class="miniMatch">小组赛</button>
+        <button bindtap="eliminateMatch" type="default" class='eliminateMatch'>淘汰赛</button>
+      </view>
+      <!-- 小组赛 和 淘汰赛结束 -->
+
+      <!-- 小组赛-填写的表格 -->
+      <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx;display:{{display?'block':'none'}}">
+        <swiper-item>
+          <scroll-view scroll-y="true" catchtouchmove="stopTouchMove" class="scoll-h">
+              <view class="item-ans" wx:for='{{mainArray}}'>
+                <scroll-view scroll-x="true" class='scrollClass' >
+                  <view class='table'>
+                    <view class='header'>
+                      <view class='tr'>
+                        <block wx:for='{{item.group}}' wx:for-item="group">
+                          <text class='td' style='width:402rpx;border-top: 2rpx solid rgb(183, 176, 226);'>{{group.group_name}}</text>
+                        </block>
+
+                        <block wx:for='{{item.t_body}}' wx:for-item="trbody">
+                          <text class='td' style='border-top: 2rpx solid rgb(183, 176, 226);'>{{trbody.num}}</text>
+                        </block>
+                      </view>
+                    </view>
+                    
+                    <view class='tbody'>
+                      <view class='tr'>
+                        <text class='td' style='width:96rpx'>序号</text>
+                        <text class='td' style='width:304rpx'>姓名/单位</text>
+                        <block wx:for='{{item.t_body}}' wx:for-item="tdbody">
+                          <text class='td' data-uid='{{tdbody.uid}}'>{{tdbody.name}}</text>
+                        </block>
+                       
+                      </view>
+                      <block wx:for='{{item.t_body}}' wx:for-item="trbody" wx:for-index="trIndex">
+
+                        <view class='tr'>
+                          <view class='td' style='width:96rpx'>{{trbody.num}}</view>
+                          <view class='td' style='width:304rpx' data-uid='{{trbody.uid}}'><block>{{trbody.name}}</block></view>
+                            <block wx:for='{{item.t_body}}' wx:for-item="tdbody" wx:if='{{index < arraylen}}' wx:for-index="tdIndex">
+                              <view class='td' style='width:153px'>
+                                <block wx:if="{{tdIndex == trIndex}}">
+                                  <input data-uid='{{trbody.uid}}' data-tr='{{trbody.uid}}' data-td='{{tdbody.uid}}' bindblur="getMess" disabled="true" style="background:#eee" />
+                                </block>
+                                <block wx:elif="{{tdIndex !== trIndex}}">
+                                <input data-uid='{{trbody.uid}}' data-tr='{{trbody.uid}}' data-td='{{tdbody.uid}}' bindblur="getMess" disabled="{{groupIptDisable}}"  />
+                                </block>
+                              </view>
+                            </block>
+                        </view>
+
+                      </block>
+
+                    </view>
+                  </view>                  
+                </scroll-view>
+                 <button class="eliminateBtn" bindtap="subGroupMess" data-step='{{step}}' hover-class="none">提交</button>
+              </view>
+          </scroll-view>
+        </swiper-item>
+      </swiper>
+
+      <!-- 淘汰赛 -->
+      <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx;display:{{display?'none':'block'}}">
+        <swiper-item>
+          <scroll-view scroll-y="true" catchtouchmove="stopTouchMove" class="scoll-h">
+              <!-- 这里是展示的表格 -->
+              <view class="item-ans" wx:for='{{eliminateArrayExhibition}}' wx:for-index="Index">
+                <scroll-view scroll-x="true" class='scrollClass'>
+                  <view class='table'>
+                    <view class='header'>
+                      <view class='tr'>
+                      <text class='td' style='width:370rpx;border-top: 2rpx solid rgb(183, 176, 226);'>姓名</text>
+                      <text class='td' style='width:370rpx;border-top: 2rpx solid rgb(183, 176, 226);'>比分</text>
+                      </view>
+                    </view>
+                    
+                    <view class='tbody'>
+                      <block wx:for='{{item}}' wx:for-item="trbody" wx:for-index="trIndex">
+                        <view class='tr'>
+                          <block wx:for='{{trbody}}' wx:for-item="tdbody" wx:for-index="tdIndex">
+                            <view class='td' style='width:372rpx'>
+                                <input disabled="true" style="background:#eee;border:2rpx solid #eee" value="{{tdbody}}" />
+                            </view>
+                          </block>
+                        </view>
+                      </block>
+                    </view>
+                  </view>                  
+                </scroll-view>
+              </view>
+               <!-- 这里是展示的表格结束 -->  
+
+
+              <!-- 这里是要提交的表格 -->
+              <view class="item-ans" wx:for='{{eliminateMatchArrayFirst}}'>
+                <scroll-view scroll-x="true" class='scrollClass'>
+                  <view class='table'>
+                    <view class='header'>
+                      <view class='tr'>
+                        <block wx:for='{{item.group}}' wx:for-item="group">
+                          <text class='td' style='width:402rpx;border-top: 2rpx solid rgb(183, 176, 226);'>{{group.group_name}}</text>
+                        </block>
+                        <block wx:for='{{item.t_body}}' wx:for-item="trbody">
+                          <text class='td' style='border-top: 2rpx solid rgb(183, 176, 226);'>{{trbody.num}}</text>
+                        </block>
+                        
+                      </view>
+                    </view>
+                    
+                    <view class='tbody'>
+                      <view class='tr'>
+                        <text class='td' style='width:96rpx'>序号</text>
+                        <text class='td' style='width:304rpx'>姓名/单位</text>
+                        <block wx:for='{{item.t_body}}' wx:for-item="trbody">
+                          <text class='td' data-uid='{{trbody.uid}}'>{{trbody.name}}</text>
+                        </block>
+                       
+                      </view>
+
+                      <block wx:for='{{item.t_body}}' wx:for-item="trbody" wx:for-index="trIndex">
+                        <view class='tr'>
+                          <view class='td' style='width:96rpx'>{{trbody.num}}</view>
+                          <view class='td' style='width:304rpx' data-uid='{{trbody.uid}}'><block>{{trbody.name}}</block></view>
+                          <block wx:for='{{item.t_body}}' wx:for-item="tdbody" wx:if='{{index < eliminatelen_2}}' wx:for-index="tdIndex">
+                            <view class='td' style='width:153px'>
+                              <block wx:if="{{tdIndex == trIndex}}">
+                                <input data-uid='{{trbody.uid}}' data-tr='{{trbody.uid}}' data-td='{{tdbody.uid}}' bindblur="getMesseLiminate" disabled="true" style="background:#eee" />
+                              </block>
+                              <block wx:elif="{{tdIndex !== trIndex}}">
+                              <input data-uid='{{trbody.uid}}' data-tr='{{trbody.uid}}' data-td='{{tdbody.uid}}' bindblur="getMesseLiminate" />
+                              </block>
+                            </view>
+                          </block>
+                          
+                        </view>
+                      </block>
+
+                    </view>
+                  </view>                  
+                </scroll-view>
+                
+                 <button class="eliminateBtn" bindtap="subMission" data-step='{{step}}' disabled="{{liminateIptDisable}}" hover-class="none">提交</button>
+              </view>
+              <!-- 提交表格结束 -->
+              
+          </scroll-view>
+        </swiper-item>
+      </swiper>
+  </view>
+</view>

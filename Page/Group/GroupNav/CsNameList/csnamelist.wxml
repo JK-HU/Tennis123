@@ -1,0 +1,31 @@
+<!--Page/Group/GroupNav/CsNameList/csnamelist.wxml 参赛者名单 swiper-tab 个数固定,后台不用添加 -->
+<view class='body'>
+  <view >
+    <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+      <view class="tab-item {{currentTab==0?'active':''}}"  data-current="0" bindtap="swichNav">U10男子单打</view>
+      <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">U10女子单打</view>
+      <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">U12男子单打</view>
+      <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">U12女子单打</view>
+      <view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">U14男子单打</view>
+      <view class="tab-item {{currentTab==5?'active':''}}" data-current="5" bindtap="swichNav">U14女子单打</view>
+      <view class="tab-item {{currentTab==6?'active':''}}" data-current="6" bindtap="swichNav">U16男子单打</view>
+    </scroll-view>
+
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx">
+      <swiper-item wx:for="{{[0,1,2,3,4,5,6,7]}}">
+        <scroll-view scroll-y="true" catchtouchmove="stopTouchMove" class="scoll-h">
+          <block wx:for="{{groupArr}}">
+            <view class="item-ans">
+              <text class='group'>{{item.group}}</text>
+              <navigator url="/Page/Group/GroupNav/CsNameList/CszDetails/cszdetails" class='groupMes' hover-class="none">
+                <text>{{item.name}}</text>
+                <icon class='iconfont iconright'></icon>
+              </navigator>      
+            </view>
+          </block>
+        </scroll-view>
+      </swiper-item>
+    </swiper>
+</view>
+
+</view>

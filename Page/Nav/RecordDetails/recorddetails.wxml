@@ -1,0 +1,56 @@
+<!--Page/Nav/RecordDetails/recorddetails.wxml  战绩详情页 -->
+<view class='body'>
+  
+  <view class='wrap'>
+
+<<<<<<< HEAD
+    <view class='card'>
+      <navigator url='/Page/Nav/Individual_details/individual_details' open-type='navigate' hover-class='none'>
+        <text class='title'>赛事标题</text>
+        <view class='card_line'>
+          <icon class='iconfont icontuandui'></icon>
+          <text>16人</text>
+        </view> 
+        <view class='card_line'>
+          <icon class='iconfont iconjiangbei'></icon>
+          <text>单打</text>
+=======
+    <view class='card' wx:for="{{mathchArr}}">
+      <navigator url='/Page/Nav/Individual_details/individual_details' open-type='navigate' hover-class='none'>
+        <text class='title'>{{item.title}}</text>
+        <view class='card_line'>
+          <icon class='iconfont icontuandui'></icon>
+          <text>{{item.peopleNum}}人</text>
+        </view> 
+        <view class='card_line'>
+          <icon class='iconfont iconjiangbei'></icon>
+          <text>{{item.playStyle}}</text>
+>>>>>>> 赛事小程序
+          <text class='open'>open</text>
+        </view>
+        <view class='card_line'>
+          <icon class='iconfont iconshijian2'></icon>
+<<<<<<< HEAD
+          <text>2019-06-09 08:00</text>
+        </view>
+        <view class='card_line'>
+          <icon class='iconfont icondidian'></icon>
+          <text class='place'>合肥奥体中心网球俱乐部 | 合肥</text>
+        </view>
+        <view class='card_line'>
+          <text>决赛</text>
+=======
+          <text>{{item.time}}</text>
+        </view>
+        <view class='card_line'>
+          <icon class='iconfont icondidian'></icon>
+          <text class='place'>{{item.place}}</text>
+        </view>
+        <view class='card_line'>
+          <text>{{item.stage}}</text>
+>>>>>>> 赛事小程序
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

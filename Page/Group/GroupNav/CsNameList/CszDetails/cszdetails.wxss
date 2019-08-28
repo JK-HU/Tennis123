@@ -1,0 +1,12 @@
+/* Page/Group/GroupNav/CsNameList/CszDetails/cszdetails.wxss */
+.body{width: 100%;height: 100%;overflow: hidden}
+.wrap{display: flex}
+.wrap .mes{flex: 2;font-size: 30rpx;}
+.wrap .mes .mesName{width: 288rpx;height: 80rpx;display: inline-block;text-align: center;line-height: 80rpx;margin: 0 0 0 20rpx;}
+.wrap .mes .mesAge{width: 100rpx;line-height: 80rpx;display: inline-block;text-align: center;}
+.wrap .mes .mesIntrduce{display: block;width: 388rpx;line-height: 80rpx;margin: 24rpx  0 0 20rpx;border: 1px solid #ddd;font-size: 24rpx;overflow: hidden;}
+.wrap .images{flex: 1}
+.wrap .images image{width: 170rpx;height: 170rpx;display: block;background: #ddd;margin: 0 auto;}
+
+
+

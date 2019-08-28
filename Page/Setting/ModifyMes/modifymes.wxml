@@ -1,0 +1,117 @@
+<!--Page/Setting/ModifyMes/modifymes.wxml 修改个人信息  -->
+<view class='wrap'>
+  <view class='content'>
+  
+    <view class='line'>
+      <text>手机号</text>
+<<<<<<< HEAD
+      <input type='text' name='phoneNumber' value=''></input>
+=======
+      <input type='text' name='phoneNumber' value='' bindinput='bindPhone'></input>
+>>>>>>> 赛事小程序
+      <view class='clear'></view>
+    </view>
+    <view class='line'>
+      <text>真实姓名</text>
+<<<<<<< HEAD
+      <input type='text' name='name' value=''></input>
+      <view class='clear'></view>
+    </view>
+    <view class='line'>
+      <text>生日</text>
+      <input type='text' name='brithday' value=''></input>
+=======
+      <input type='text' name='name' value='' bindinput='bindName'></input>
+      <view class='clear'></view>
+    </view>
+    <view class='line'>
+      <view class="section">
+        <text class="section__title">生日</text>
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+          <view class="picker"> {{date}} </view>
+        </picker>
+      </view>
+      <icon class='iconfont iconright'></icon>
+>>>>>>> 赛事小程序
+      <view class='clear'></view>
+    </view>
+
+    <view class='line'>
+      <text>性别</text>
+<<<<<<< HEAD
+      <input type='text' name='sex' value=''></input>
+=======
+      <input type='text' name='sex' value='' bindinput='bindSex'></input>
+>>>>>>> 赛事小程序
+      <view class='clear'></view>
+    </view>
+    <view class='line' wx:for="{{fieldArr}}">
+      <text>{{item.field}}</text>
+      <input type='text' data-type="{{item.name}}" name='{{item.name}}' value='' bindinput='bindGetValue'></input>
+      <view class='clear'></view>
+    </view>
+<<<<<<< HEAD
+    <view class='line'>
+      <view class="section">
+        <text class="section__title">首次接触网球年份</text>
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+          <view class="picker"> {{date}} </view>
+        </picker>
+      </view>
+      <icon class='iconfont iconright'></icon>
+      <view class='clear'></view>
+    </view>
+=======
+
+>>>>>>> 赛事小程序
+
+    <view class='line'>
+      <view class="section">
+        <text class="section__title">现在使用的球拍</text>
+        <picker value="{{ballIndex}}" range="{{ballArray}}" bindchange="bindBallPaiChange">
+          <view class="picker"> {{ballArray[ballIndex]}} </view>
+        </picker>
+      </view>
+      <icon class='iconfont iconright'></icon>
+      <view class='clear'></view>
+    </view>
+
+<<<<<<< HEAD
+    <view class='line'>
+      <view class="section">
+        <text class="section__title">正手握拍是</text>
+        <picker value="{{handBallIndex}}" range="{{handBallArray}}" bindchange="bindZsChange">
+          <view class="picker"> {{handBallArray[handBallIndex]}} </view>
+        </picker>
+      </view>
+      <icon class='iconfont iconright'></icon>
+      <view class='clear'></view>
+    </view>
+
+    <view class='line'>
+      <view class="section">
+        <text class="section__title">反手握拍是</text>
+        <picker value="{{handBallfIndex}}" range="{{handBallfArray}}" bindchange="bindFsChange">
+          <view class="picker"> {{handBallfArray[handBallfIndex]}} </view>
+        </picker>
+      </view>
+      <icon class='iconfont iconright'></icon>
+      <view class='clear'></view>
+    </view>
+
+    <view class='line'>
+      <view class='section'>
+        <text class='section_title'>技术类型</text>
+        <picker value="{{jstypeArrayIndex}}" range="{{jstypeArray}}" bindchange='bindjslx'>
+          <view class='picker'>{{jstypeArray[jstypeArrayIndex]}}</view>
+        </picker>
+      </view>
+      <icon class='iconfont iconright'></icon>
+      <view class='clear'></view>
+    </view>
+=======
+>>>>>>> 赛事小程序
+
+  </view>
+    <button type='primary' style='display:block;width:90%;margin:40rpx auto' bindtap='bindSave'>保存</button>
+</view>

@@ -1,0 +1,22 @@
+/* Page/Nav/PayMent/payment.wxss */
+.payWrap{width: 100%;height: auto;overflow: hidden}
+.title{width: 90%;line-height: 70rpx;font-size: 34rpx;display: block;text-align: left;margin: 0 auto;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.content{width: 100%;height: 100%;overflow: hidden}
+.content .paymoney{width: 90%;line-height: 100rpx;margin: 16rpx auto;border-top: 1px solid #eee;border-bottom: 1px solid #eee}
+.content .paymoney text:nth-child(1){float: left;color: #999;font-size: 34rpx}
+.content .paymoney text:nth-child(2){float: right;font-size: 44rpx}
+.content .paymoney text:nth-child(2)::before{content: '￥';color: #000;font-size: 44rpx;}
+.content .paydetails{width: 90%;line-height: 70rpx;margin: 16rpx auto;border-bottom: 1px solid #eee}
+.content .paydetails text{font-size: 30rpx;color: #999}
+.content .paydetails text:nth-child(1){float: left}
+.content .paydetails .val{float: right}
+.payment{width: 70%;line-height: 32rpx;display: block;margin: 60rpx auto 0 auto;vertical-align: text-top}
+.payment::after{content: '';border: 1px solid #09BB07;}
+.payment icon{display: inline-block;transform: translateY(9%);margin-right: 20rpx; }
+.payment text{color: #09BB07;display: inline-block;transform: translateY(-50%); }
+
+
+
+
+
+

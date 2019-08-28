@@ -1,0 +1,12 @@
+/* Page/Group/GroupNav/groupnav.wxss */
+.wrap{width: 100%;height: auto;overflow: hidden}
+button{background: #2196f3;color: #fff}
+/* 轮播图 */
+.slide-image{width: 100%}
+/* 导航栏目 */
+.nav_title{font-size: 32rpx;display: block;padding: 20rpx 0 20rpx 30rpx;line-height: 42rpx;width: auto;background: #efefef;}
+.nav_bh{width: auto;height: auto;padding: 8rpx 12rpx;}
+.nav_bh_btn{margin-right: 20rpx;}
+/* 页面导航区 背景图在290px左右不要相差太大,最好290 */
+.pageNavWrap{width: auto;height: 580rpx;background-image: url(http://img0.imgtn.bdimg.com/it/u=27729475,3113009081&fm=26&gp=0.jpg);background-size: 100% auto;background-repeat: no-repeat;text-align: center}
+.pageNavWrap .pageNav{width: 26%;height: 80rpx;line-height:80rpx;background: #ffffffa9;color: #2196f3;float: left;text-align: center;margin: 60rpx 60rpx;padding: 26rpx 24rpx}

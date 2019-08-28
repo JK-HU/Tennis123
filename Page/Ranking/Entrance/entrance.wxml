@@ -1,0 +1,13 @@
+<!--Page/Ranking/Entrance/entrance.wxml  排行榜 -->
+<view class='wrap'>
+  <view wx:for="{{entranceUrl}}">
+    <navigator url='{{item.url}}' open-type='navigate' hover-class='none'>
+      <button class='entrace' hover-class='none'>{{item.name}}</button>
+    </navigator>
+  </view>
+  <!-- <navigator url='' open-type='navigate' hover-class='none'>
+    <button type='primary' hover-class='none'>我的排名</button>
+  </navigator> -->
+  
+
+</view>

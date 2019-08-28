@@ -1,0 +1,389 @@
+<!--Page/Group/GroupNav/Table/table.wxml 签表 -->
+<view class='body'>
+  <view >
+<<<<<<< HEAD
+    <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+      <view class="tab-item {{currentTab==0?'active':''}}"  data-current="0" bindtap="swichNav">U10男子单打</view>
+      <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">U10女子单打</view>
+      <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">U12男子单打</view>
+      <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">U12女子单打</view>
+      <view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">U14男子单打</view>
+      <view class="tab-item {{currentTab==5?'active':''}}" data-current="5" bindtap="swichNav">U14女子单打</view>
+      <view class="tab-item {{currentTab==6?'active':''}}" data-current="6" bindtap="swichNav">U16男子单打</view>
+    </scroll-view>
+
+    <!-- 小组赛 和 淘汰赛 -->
+    <view class='btns'>
+      <button bindtap="miniMatch" type="default" class="miniMatch">小组赛</button>
+      <button bindtap="eliminateMatch" type="default" class='eliminateMatch'>淘汰赛</button>
+    </view>
+    <!-- 小组赛 和 淘汰赛结束 -->
+    <!-- 四轮比赛按钮 -->
+    <view class='roundNum' style="display:{{display?'none':'block'}}">
+      <button class='firstRound' bindtap='firstRound' size='mini'>第一轮</button>
+      <button class='secondRound' bindtap='secondRound' size='mini'>1/4决赛</button>
+      <button class='thirdRound' bindtap='thirdRound' size='mini'>半决赛</button>
+      <button class='fourthRound' bindtap='fourthRound' size='mini'>总决赛</button>
+      <view class='clear'></view>
+    </view>
+    <!-- 四轮比赛按钮结束 -->
+
+    <!-- 小组赛 -->
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx;display:{{display?'block':'none'}}">
+      <swiper-item wx:for="{{[0,1,2,3,4,5,6,7]}}">
+        <scroll-view scroll-y="true" catchtouchmove="stopTouchMove" class="scoll-h">
+            <view class="item-ans">
+              <scroll-view scroll-x="true" class='scrollClass' >
+                <view class='table'>
+                  <view class='header'>
+                    <view class='tr'>
+                      <text class='td' style='width:402rpx;border-top: 1px solid rgb(183, 176, 226);'>A组</text>
+                      <text class='td' style='border-top: 1px solid rgb(183, 176, 226);'>A1</text>
+                      <text class='td' style='border-top: 1px solid rgb(183, 176, 226);'>A2</text>
+                      <text class='td' style='border-top: 1px solid rgb(183, 176, 226);'>A3</text>
+                      <text class='td' style='border-top: 1px solid rgb(183, 176, 226);'>A4</text>
+                      <text class='td' style='border-bottom:none;border-top: 1px solid rgb(183, 176, 226);'>
+                        <text style="visibility:hidden"> 胜次 </text>
+                      </text>
+                      <text class='td' style='border-top: 1px solid rgb(183, 176, 226);'>净胜</text>
+                      <text class='td' style='border-bottom:none;border-top: 1px solid rgb(183, 176, 226);'>
+                        <text style="visibility:hidden"> 名次 </text>
+                      </text>
+                    </view>
+                    
+                    
+
+                  </view>
+                  
+                  <view class='tbody'>
+                    <view class='tr'>
+                      <text class='td' style='width:96rpx'>序号</text>
+                      <text class='td' style='width:304rpx'>姓名/单位</text>
+                      <text class='td'>张三/桂花园学院</text>
+                      <text class='td'>王五/清华学院</text>
+                      <text class='td'>赵柳/被济宁学院</text>
+                      <text class='td'>芦田/南京大学</text>
+                      <text class='td' >场数</text>
+                      <text class='td' style='width:151rpx'>盘</text>
+                      <text class='td' style='width:152rpx'>局</text>
+                      <text class='td'>名次</text>
+                    </view>
+
+                    <view class='tr'>
+                      <text class='td' style='width:96rpx'>A1</text>
+                      <text class='td' style='width:304rpx'>
+                        <block>张三/桂花园学院</block>
+                      </text>
+                      <text class='td'>8-2</text>
+                      <text class='td'>8-2</text>
+                      <text class='td'>8-2</text>
+                      <text class='td'>8-2</text>
+                      <text class='td'>8-2</text>
+                      <text class='td' style='width:151rpx'>0</text>
+                      <text class='td' style='width:151rpx'>0</text>
+                      <text class='td'>0</text>
+
+                    </view>
+                    <view class='tr'>
+                      <text class='td' style='width:96rpx'>A2</text>
+                      <text class='td' style='width:304rpx'>王五/清华学院</text>
+                      <text class='td'>3-9</text>
+                      <text class='td'>3-9</text>
+                      <text class='td'>3-9</text>
+                      <text class='td'>3-9</text>
+                      <text class='td'>3-9</text>
+                      <text class='td' style='width:151rpx'>0</text>
+                      <text class='td' style='width:151rpx'>0</text>
+                      <text class='td'>0</text>
+
+                    </view>
+                    <view class='tr'>
+                      <text class='td' style='width:96rpx'>A3</text>
+                      <text class='td' style='width:304rpx'>王五/被济宁学院</text>
+                      <text class='td'>1-2</text>
+                      <text class='td'>1-2</text>
+                      <text class='td'>1-2</text>
+                      <text class='td'>1-2</text>
+                      <text class='td'>1-2</text>
+                      <text class='td' style='width:151rpx'>0</text>
+                      <text class='td' style='width:151rpx'>0</text>
+                      <text class='td'>0</text>
+
+                    </view>
+                    <view class='tr'>
+                      <text class='td' style='width:96rpx'>A4</text>
+                      <text class='td' style='width:304rpx'>赵柳/南京大学</text>
+                      <text class='td'>3-4</text>
+                      <text class='td'>3-4</text>
+                      <text class='td'>3-4</text>
+                      <text class='td'>3-4</text>
+                      <text class='td'>3-4</text>
+                      <text class='td' style='width:151rpx'>0</text>
+                      <text class='td' style='width:151rpx'>0</text>
+                      <text class='td'>0</text>
+
+
+
+                    </view>
+                    <view class='tr'>
+                      <text class='td' style='width:96rpx'>A5</text>
+                      <text class='td' style='width:304rpx'>芦田/南京大学</text>
+                      <text class='td'>4-8</text>
+                      <text class='td'>4-8</text>
+                      <text class='td'>4-8</text>
+                      <text class='td'>4-8</text>
+                      <text class='td'>4-8</text>
+                      <text class='td' style='width:151rpx'>0</text>
+                      <text class='td' style='width:151rpx'>0</text>
+                      <text class='td'>0</text>
+
+                    </view>
+
+                  </view>
+                </view>                  
+              </scroll-view>
+              
+                <!-- <scroll-view scroll-x="true" class='scrollClass' >
+                  <view class='table'>
+                    <view class='header'>
+                      <block  wx:for="{{item.group}}" wx:for-item="group">
+                        <text class='bgcenter'>{{group.xz}}</text>
+                      </block>
+                      <block  wx:for="{{item.gp}}" wx:for-item="group">
+                        <text class='bgcenter'>{{group.name}}</text>
+                      </block>
+                      
+                    </view>
+                    
+                    <view class='tr' wx:for="{{item.gp}}" wx:for-item="group">
+                      
+                        <text>{{group.name}}</text>
+                        <text>{{group.bf}}</text>
+                        <text>{{group.win}}</text>
+                        <text>{{group.onlyWin}}</text>
+                        <text>{{group.sort}}</text>
+                        <text>{{group.v}}</text>
+                    </view>
+                  </view>                  
+                </scroll-view> -->
+
+            </view>
+        </scroll-view>
+      </swiper-item>
+    </swiper>
+
+    <!-- 淘汰赛 -->
+      <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx;display:{{display?'none':'block'}}">
+      <swiper-item wx:for="{{[0,1,2,3,4,5,6,7]}}">
+        <scroll-view scroll-y="true" catchtouchmove="stopTouchMove" class="scoll-h">
+          
+            <view class="item-ans eliminate">
+                <view class='item-line'>
+                  <text class='item-line-name'>朱大为</text>
+                  <text class='item-line-score'>3</text>
+                  <icon type='success_no_circle' class='item-icon' size='20' color='red'></icon>
+                  <view class='clear'></view>
+                </view>
+            </view>
+         
+        </scroll-view>
+      </swiper-item>
+    </swiper>
+
+
+
+
+</view>
+
+=======
+      <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+        <view class="tab-item {{currentTab==0?'active':''}}"  data-current="0" bindtap="swichNav">U10男子单打</view>
+        <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">U10女子单打</view>
+        <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">U12男子单打</view>
+        <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">U12女子单打</view>
+        <view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">U14男子单打</view>
+        <view class="tab-item {{currentTab==5?'active':''}}" data-current="5" bindtap="swichNav">U14女子单打</view>
+        <view class="tab-item {{currentTab==6?'active':''}}" data-current="6" bindtap="swichNav">U16男子单打</view>
+      </scroll-view>
+
+      <!-- 小组赛 和 淘汰赛 -->
+      <view class='btns'>
+        <button bindtap="miniMatch" type="default" class="miniMatch">小组赛</button>
+        <button bindtap="eliminateMatch" type="default" class='eliminateMatch'>淘汰赛</button>
+      </view>
+      <!-- 小组赛 和 淘汰赛结束 -->
+      <!-- 四轮比赛按钮 -->
+      <view class='roundNum' style="display:{{display?'none':'block'}}">
+        <button class='firstRound' bindtap='firstRound' size='mini'>第一轮</button>
+        <button class='secondRound' bindtap='secondRound' size='mini'>1/4决赛</button>
+        <button class='thirdRound' bindtap='thirdRound' size='mini'>半决赛</button>
+        <button class='fourthRound' bindtap='fourthRound' size='mini'>总决赛</button>
+        <view class='clear'></view>
+      </view>
+      <!-- 四轮比赛按钮结束 -->
+
+      <!-- 小组赛 -->
+      <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx;display:{{display?'block':'none'}}">
+        <swiper-item wx:for="{{[0,1,2,3,4,5,6,7]}}">
+          <scroll-view scroll-y="true" catchtouchmove="stopTouchMove" class="scoll-h">
+              <view class="item-ans">
+                <scroll-view scroll-x="true" class='scrollClass' >
+                  <view class='table'>
+                    <view class='header'>
+                      <view class='tr'>
+                        <text class='td' style='width:402rpx;border-top: 1px solid rgb(183, 176, 226);'>A组</text>
+                        <text class='td' style='border-top: 1px solid rgb(183, 176, 226);'>A1</text>
+                        <text class='td' style='border-top: 1px solid rgb(183, 176, 226);'>A2</text>
+                        <text class='td' style='border-top: 1px solid rgb(183, 176, 226);'>A3</text>
+                        <text class='td' style='border-top: 1px solid rgb(183, 176, 226);'>A4</text>
+                        <text class='td' style='border-bottom:none;border-top: 1px solid rgb(183, 176, 226);'>
+                          <text style="visibility:hidden"> 胜次 </text>
+                        </text>
+                        <text class='td' style='border-top: 1px solid rgb(183, 176, 226);'>净胜</text>
+                        <text class='td' style='border-bottom:none;border-top: 1px solid rgb(183, 176, 226);'>
+                          <text style="visibility:hidden"> 名次 </text>
+                        </text>
+                      </view>
+                      
+                      
+
+                    </view>
+                    
+                    <view class='tbody'>
+                      <view class='tr'>
+                        <text class='td' style='width:96rpx'>序号</text>
+                        <text class='td' style='width:304rpx'>姓名/单位</text>
+                        <text class='td'>张三/桂花园学院</text>
+                        <text class='td'>王五/清华学院</text>
+                        <text class='td'>赵柳/被济宁学院</text>
+                        <text class='td'>芦田/南京大学</text>
+                        <text class='td' >场数</text>
+                        <text class='td' style='width:151rpx'>盘</text>
+                        <text class='td' style='width:152rpx'>局</text>
+                        <text class='td'>名次</text>
+                      </view>
+
+                      <view class='tr'>
+                        <text class='td' style='width:96rpx'>A1</text>
+                        <text class='td' style='width:304rpx'>
+                          <block>张三/桂花园学院</block>
+                        </text>
+                        <text class='td'>8-2</text>
+                        <text class='td'>8-2</text>
+                        <text class='td'>8-2</text>
+                        <text class='td'>8-2</text>
+                        <text class='td'>8-2</text>
+                        <text class='td' style='width:151rpx'>0</text>
+                        <text class='td' style='width:151rpx'>0</text>
+                        <text class='td'>0</text>
+
+                      </view>
+                      <view class='tr'>
+                        <text class='td' style='width:96rpx'>A2</text>
+                        <text class='td' style='width:304rpx'>王五/清华学院</text>
+                        <text class='td'>3-9</text>
+                        <text class='td'>3-9</text>
+                        <text class='td'>3-9</text>
+                        <text class='td'>3-9</text>
+                        <text class='td'>3-9</text>
+                        <text class='td' style='width:151rpx'>0</text>
+                        <text class='td' style='width:151rpx'>0</text>
+                        <text class='td'>0</text>
+
+                      </view>
+                      <view class='tr'>
+                        <text class='td' style='width:96rpx'>A3</text>
+                        <text class='td' style='width:304rpx'>王五/被济宁学院</text>
+                        <text class='td'>1-2</text>
+                        <text class='td'>1-2</text>
+                        <text class='td'>1-2</text>
+                        <text class='td'>1-2</text>
+                        <text class='td'>1-2</text>
+                        <text class='td' style='width:151rpx'>0</text>
+                        <text class='td' style='width:151rpx'>0</text>
+                        <text class='td'>0</text>
+
+                      </view>
+                      <view class='tr'>
+                        <text class='td' style='width:96rpx'>A4</text>
+                        <text class='td' style='width:304rpx'>赵柳/南京大学</text>
+                        <text class='td'>3-4</text>
+                        <text class='td'>3-4</text>
+                        <text class='td'>3-4</text>
+                        <text class='td'>3-4</text>
+                        <text class='td'>3-4</text>
+                        <text class='td' style='width:151rpx'>0</text>
+                        <text class='td' style='width:151rpx'>0</text>
+                        <text class='td'>0</text>
+
+
+
+                      </view>
+                      <view class='tr'>
+                        <text class='td' style='width:96rpx'>A5</text>
+                        <text class='td' style='width:304rpx'>芦田/南京大学</text>
+                        <text class='td'>4-8</text>
+                        <text class='td'>4-8</text>
+                        <text class='td'>4-8</text>
+                        <text class='td'>4-8</text>
+                        <text class='td'>4-8</text>
+                        <text class='td' style='width:151rpx'>0</text>
+                        <text class='td' style='width:151rpx'>0</text>
+                        <text class='td'>0</text>
+
+                      </view>
+
+                    </view>
+                  </view>                  
+                </scroll-view>
+                
+                  <!-- <scroll-view scroll-x="true" class='scrollClass' >
+                    <view class='table'>
+                      <view class='header'>
+                        <block  wx:for="{{item.group}}" wx:for-item="group">
+                          <text class='bgcenter'>{{group.xz}}</text>
+                        </block>
+                        <block  wx:for="{{item.gp}}" wx:for-item="group">
+                          <text class='bgcenter'>{{group.name}}</text>
+                        </block>
+                        
+                      </view>
+                      
+                      <view class='tr' wx:for="{{item.gp}}" wx:for-item="group">
+                        
+                          <text>{{group.name}}</text>
+                          <text>{{group.bf}}</text>
+                          <text>{{group.win}}</text>
+                          <text>{{group.onlyWin}}</text>
+                          <text>{{group.sort}}</text>
+                          <text>{{group.v}}</text>
+                      </view>
+                    </view>                  
+                  </scroll-view> -->
+
+              </view>
+          </scroll-view>
+        </swiper-item>
+      </swiper>
+
+      <!-- 淘汰赛 -->
+        <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx;display:{{display?'none':'block'}}">
+          <swiper-item wx:for="{{[0,1,2,3,4,5,6,7]}}">
+            <scroll-view scroll-y="true" catchtouchmove="stopTouchMove" class="scoll-h">
+              
+                <view class="item-ans eliminate">
+                    <view class='item-line'>
+                      <text class='item-line-name'>朱大为</text>
+                      <text class='item-line-score'>3</text>
+                      <icon type='success_no_circle' class='item-icon' size='20' color='red'></icon>
+                      <view class='clear'></view>
+                    </view>
+                </view>
+            
+            </scroll-view>
+          </swiper-item>
+        </swiper>
+
+  </view>
+>>>>>>> 赛事小程序
+</view>

@@ -1,0 +1,20 @@
+<!--Page/Setting/ContactUs/contactus.wxml 联系我们  -->
+<view class='wrap'>
+  <view class='content'>
+    <view class='logo'>
+      <image src=''></image>
+      <text>Tennis网球分级赛</text>
+    </view>
+
+    <view class='phone'>
+      <text>管理员电话(微信) : 1231231</text>
+      <text>管理员: 186234</text>
+      <text>办公电话:23423</text>
+    </view>
+
+    <view class='ewm'>
+      <text>欢迎扫描一下二维码关注我们的公众号</text>
+      <image src=''></image>
+    </view>
+  </view>
+</view>

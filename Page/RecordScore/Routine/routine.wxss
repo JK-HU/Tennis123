@@ -1,0 +1,68 @@
+/* Page/RecordScore/Routine/routine.wxss */
+@import "iconfont_individual_details.wxss";
+.body{width: 100%;height: 100%;overflow: auto}
+.header{width: 100%;height: 48px;border-bottom:1px solid #eee;position: fixed;top: 0;background: #F6F8F8;z-index: 994}
+.header .header_wrap{width: 95%;line-height: 48px;margin: 0 auto;display: flex}
+.header .header_wrap .section{ flex: 1; text-align: center; }
+.header .header_wrap .section .section__title{ font-size: 15px; color: rgb(88, 87, 87); }
+/* 内容 */
+.wrap{width: 100%;height:auto;margin-top: 53px;}
+.wrap .wrap_content{
+  width: 92%;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+.wrap .wrap_content .line_title{
+  width: 100%;
+  line-height: 35px;
+  font-size: 16px;
+  color: #000;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.wrap .wrap_content .content_line{
+  width: 100%;
+  line-height: 14px;
+  font-size: 13px;
+  color: #999;
+}
+.wrap .wrap_content .content_line icon{
+  margin-right: 7px;
+  color: #2196f3;
+}
+/* .wrap .wrap_content .content_line icon{}
+.wrap .wrap_content .content_line .peoples{
+
+} */
+.wrap .wrap_content .content_line .peoples::after{
+  content: '人';
+  display: inline-block;
+  margin-right: 5px;
+}
+.wrap .wrap_content .content_line .bisai_status{
+  padding: 2px 5px;
+  background: rgb(77, 159, 226);
+  border-radius: 4px;
+  color: #fff;
+  font-size: 11px;
+}
+/* .wrap .wrap_content .content_line .play_style{
+  
+} */
+.wrap .wrap_content .content_line .play_status{
+    padding: 2px 5px;
+    background: rgb(212, 72, 62);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 11px;
+    margin:0 5px;
+}
+/* .wrap .wrap_content .content_line .times{} */
+.wrap .wrap_content .content_line .place{
+  font-size: 14px;
+  color: rgb(75, 71, 71);
+}

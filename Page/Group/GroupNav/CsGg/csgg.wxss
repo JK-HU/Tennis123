@@ -1,0 +1,2 @@
+/* Page/Group/GroupNav/CsGg/csgg.wxss */
+.wrap{width: auto;height: auto;background: #fff;padding: 50rpx 30rpx;font-size: 30rpx;}

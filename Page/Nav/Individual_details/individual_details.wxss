@@ -1,0 +1,87 @@
+/* Page/Nav/Individual_details/individual_details.wxss */
+@import "iconfont_individual_details.wxss";
+.body{
+  width: 100%;
+  height: 100%;
+}
+.head{
+  width: 95%;
+  height: auto;
+  line-height: 25px;
+  margin: 0 auto;
+  font-size: 16px;
+  padding: 2px 4px;
+  background-color:rgb(248, 248, 248);
+}
+.content{
+  width: 100%;
+  height: auto;
+}
+.content .content_wrap{
+  width: 96%;
+  height: 100%;
+  margin: 0 auto 15px auto;
+  background-color: #fff;
+}
+.content .content_wrap .content_line{
+  width: auto;
+  line-height: 39px;
+  font-size: 13px;
+  padding: 0 8px;
+  border-bottom: 1px solid #eee;
+}
+.content .content_wrap .content_line icon{
+  display: inline-block;
+  margin-right: 5px;
+  color: #2196f3;
+}
+/* .content .content_wrap .content_line .content_times{  }
+.content .content_wrap .content_line .content_city{}
+.content .content_wrap .content_line .content_place{}
+.content .content_wrap .content_line .content_jibie{}
+.content .content_wrap .content_line .content_money{}
+.content .content_wrap .content_line .content_baom{}
+.content .content_wrap .content_line .content_pinglun{}
+.content .content_wrap .content_line .content_zhangc{}
+.content .content_wrap .content_line .content_times{} */
+.content .content_btns{
+  width: auto;
+  height: 34px;
+  line-height: 33px;
+  display: block;
+  text-align: center;
+  
+}
+.content .content_btns button{
+  border: none;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 13px;
+}
+.content .content_btns button::after{
+  border: 1px solid #2196f3;
+}
+.content .content_btns .look_bfen{
+  width: 44%;
+  height: 100%;
+  display: inline-block;
+  margin-right: 10px;
+
+}
+.content .content_btns .lu_bfen{
+    width: 44%;
+    height: 100%;
+    display: inline-block;
+    margin-left: 10px;
+}
+.content .content_btns .signUp{
+  width: 95%;
+  height: 100%;
+  display: block;
+  margin-top: 8px;
+}
+
+
+
+
+

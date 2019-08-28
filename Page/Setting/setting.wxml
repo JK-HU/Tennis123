@@ -1,0 +1,12 @@
+<!--Page/Setting/setting.wxml 设置界面 设置界面: 实名认证,修改个人信息,找回密码,联系我们,退出登录 -->
+<view class='wrap'>
+  <view class='content'>
+    <view class='line' wx:for="{{funArr}}">
+      <navigator url='{{item.url}}' open-type='navigate' hover-class='none'>
+        <text>{{item.text}}</text>
+        <icon class='iconfont iconright'></icon>
+      </navigator>
+    </view>
+  </view>
+  <button type='warn' bindtap='outLogin' style='margin:60rpx auto 0 auto;display:block;width:90%;'> 退出登录 </button>
+</view>

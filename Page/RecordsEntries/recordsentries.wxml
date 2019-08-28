@@ -1,0 +1,123 @@
+<!--Page/RecordsEntries/recordsentries.wxml 参赛记录 -->
+<view class='body'>
+  <view class='name'>
+<<<<<<< HEAD
+    <input class='ssname' placeholder='赛事名称' placeholder-style="font-size:26rpx;color:#999"></input>
+  </view>
+  <view class='time'>
+    <view class="section">
+      <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+        <view class="picker">{{date}}</view>
+      </picker>
+    </view>
+    <view class='other'>
+      <view>其他</view>
+    </view>
+  </view>
+
+  <!-- 赛事地点 -->
+  <text style='font-size:26rpx;display:block;width:90%;margin:0 auto'>赛事标签</text>
+  <view class='place'>
+    <input class='placeIpt' type="text" bindblur="bindBlur" placeholder='请输入赛事地点'></input>
+  </view>
+
+  <!-- 赛事标签 -->
+  <text style='font-size:26rpx;display:block;width:90%;margin:0 auto'>赛事标签</text>
+  <view class='Label' style='border-bottom:1px solid #eee;margin-bottom:20rpx;padding-bottom:20rpx'>
+    <checkbox-group class='checkboxList' bindchange="checkboxChange">
+    <label class="checkbox" wx:for="{{filterList}}" wx:key="{{id}}">
+      <checkbox value="{{item.sclass_id}}" checked="{{item.checked}}" />{{item.sclass_name}}
+    </label>
+    </checkbox-group>
+  </view>
+
+  <!-- 发布审核状态 -->
+  <text style='font-size:26rpx;display:block;width:90%;margin:0 auto'>发布状态</text>
+  <view class='status'>
+    <radio-group class="radio-group" bindchange="radioChange">
+      <label wx:for="{{status}}" wx:key="{{index}}">
+        <radio value="{{item.sclass_name}}" />{{item.sclass_name}}
+      </label>
+    </radio-group>
+  </view>
+
+  <button type='primart' class="submit">提交</button>
+=======
+    <input class='ssname' bindinput='bindMatchName' placeholder='赛事名称' placeholder-style="font-size:26rpx;color:#999"></input>
+  </view>
+  <view class='time'>
+    <view class="section">
+      <picker mode="date" value="{{time}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+        <view class="picker">{{time}}</view>
+      </picker>
+    </view>
+    <!-- <view class='other'>
+      <view>其他</view>
+    </view> -->
+  </view>
+
+  <!-- 赛事城市 -->
+  <text style='font-size:26rpx;display:block;width:90%;margin:0 auto'>赛事城市</text>
+  <view class='place'>
+    <input class='placeIpt' type="text" bindinput="bindMatchCity" placeholder='请输入赛事城市'></input>
+  </view>
+
+  <!-- 赛事地点 -->
+  <text style='font-size:26rpx;display:block;width:90%;margin:0 auto'>赛事地点</text>
+  <view class='place'>
+    <input class='placeIpt' type="text" bindinput="bindMatchPlace" placeholder='请输入赛事地点'></input>
+  </view>
+
+  <!-- 总人数 -->
+  <text style='font-size:26rpx;display:block;width:90%;margin:0 auto'>参赛总人数</text>
+  <view class='place'>
+    <input class='placeIpt' type="text" bindinput="bindMatchPeopleNum" placeholder='请输入总人数'></input>
+  </view>
+
+  <!-- 费用 -->
+  <text style='font-size:26rpx;display:block;width:90%;margin:0 auto'>费用</text>
+  <view class='place'>
+    <input class='placeIpt' type="text" bindinput="bindMatchMoney" placeholder='请输入费用'></input>
+  </view>
+
+    <!-- 赛事类型 -->
+  <text style='font-size:26rpx;display:block;width:90%;margin:0 auto'>赛事类型</text>
+  <view class='status'>
+    <radio-group class="radio-group" bindchange="radioChange">
+      <label wx:for="{{status}}" wx:key="{{index}}">
+        <radio value="{{item.sclass_id}}" />{{item.sclass_name}}
+      </label>
+    </radio-group>
+  </view>
+  
+  <!-- 赛事标签 -->
+  <!-- <text style='font-size:26rpx;display:block;width:90%;margin:0 auto'>赛事标签</text>
+  <view class='Label' style='border-bottom:1px solid #eee;width:94%;margin:0 auto 20rpx auto;padding-bottom:20rpx'>
+    <checkbox-group class='checkboxList' bindchange="checkboxChange">
+    <label class="checkbox" wx:for="{{filterList}}" wx:key="{{id}}">
+      <checkbox value="{{item.sclass_id}}" />{{item.sclass_name}}
+    </label>
+    <view class='clear'></view>
+    </checkbox-group>
+  </view> -->
+
+  <!-- 赛事级别 -->
+  <text style='font-size:26rpx;display:block;width:90%;margin:20rpx auto 0 auto'>赛事级别</text>
+  <view class="section">
+    <picker bindchange="bindLevelChange" value="{{levelIndex}}" range="{{level}}">
+      <view class="picker" style='border-bottom:2rpx solid #eee'>
+        <view class="picker section__title" style='line-height:62rpx;'>
+        {{level[levelIndex]}} 
+        <icon class='iconfont icondown' style='float:right'></icon> </view>
+      </view>
+    </picker>
+  </view>
+
+
+
+  <button type='primart' class="submit" bindtap='bindSubmit'>提交</button>
+>>>>>>> 赛事小程序
+
+
+
+</view>

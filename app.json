@@ -1,0 +1,60 @@
+{
+  "pages": [
+      "Page/Nav/Navtion/navtion",
+      "Page/Nav/Individual/individual",
+<<<<<<< HEAD
+=======
+      "Page/Nav/RecordScoreDetails/recordscoredetails",
+>>>>>>> 赛事小程序
+      "Page/Login/login",
+      "Page/Nav/Individual_details/individual_details",
+      "Page/Nav/LookScore/lookscore",
+      "Page/Nav/LookScore/LookScoreTable/lookscoretable",
+      "Page/Nav/Player/Individual_player",
+      "Page/Nav/Record/Individual_record",
+      "Page/Nav/RecordDetails/recorddetails",
+      "Page/Nav/Comment/comment",
+<<<<<<< HEAD
+=======
+      "Page/Nav/PayMent/payment", 
+>>>>>>> 赛事小程序
+      "Page/Group/group",
+      "Page/Group/GroupNav/groupnav",
+      "Page/Group/GroupNav/CsGg/csgg",
+      "Page/Group/GroupNav/CsNameList/csnamelist",
+      "Page/Group/GroupNav/CsNameList/CszDetails/cszdetails",
+      "Page/Group/GroupNav/Table/table",
+      "Page/Group/GroupNav/CsTidbits/cstidbits",
+      
+      "Page/Club/CreateClub/createClub",
+<<<<<<< HEAD
+=======
+      "Page/Club/CreateComplete/createcomplete",
+      "Page/Club/CreateList/createlist",
+      "Page/Club/Modify/modify",
+      "Page/Club/VipAdmin/vipadmin",
+
+>>>>>>> 赛事小程序
+      "Page/Ranking/Entrance/entrance",
+      "Page/Ranking/EntranceDD/entrancedd",
+      "Page/Ranking/EntranceSD/entrancesd",
+      "Page/Ranking/EntranceTD/entrancetd",
+      "Page/RecordScore/RoutineEntrance/routineentrance",
+      "Page/RecordScore/Routine/routine",
+      "Page/RecordScore/Group/group",
+      "Page/RecordsEntries/recordsentries",
+      "Page/Search/search",
+      "Page/Setting/setting",
+      "Page/Setting/RealName/realname",
+      "Page/Setting/ModifyMes/modifymes",
+      "Page/Setting/RetrievePsword/retrievepsword",
+      "Page/Setting/ContactUs/contactus"
+     
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#2196f3",
+    "navigationBarTitleText": "Tennies123分级赛",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

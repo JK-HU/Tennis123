@@ -1,0 +1,5 @@
+/* Page/Nav/Comment/comment.wxss */
+text{font-size: 14px;color: #999;display: block;width:auto;margin: 10px 16px;}
+textarea{width: auto;height: 100px;display: block;color: rgb(75, 74, 74);font-size: 15px;padding: 10px 0 0 13px;background: #fff;}
+button{border: none;background: #2196f3;color: #fff;width: 90%;margin: 30px auto;}
+button::after{ border: 1px solid #2196f3; }

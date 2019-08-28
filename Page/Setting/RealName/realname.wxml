@@ -1,0 +1,27 @@
+<!--Page/Setting/RealName/realname.wxml 实名认证 -->
+<view class='wrap'>
+  <view class='line'>
+    <text>身份证</text>
+    <icon></icon>
+    <view style='display:block;clear:both'></view>
+  </view>
+  <view class='line'>
+    <text>姓名:</text>
+    <input class='name' data-type='name' name='name' type='text' bindinput="bindIpt" placeholder='请输入姓名' value=''></input>
+    <view style='display:block;clear:both'></view>
+  </view>
+  <view class='line'>
+    <text>证件号:</text>
+    <input class='idcard' data-type='idcard' name='idcard' type='idcard' bindinput='bindIpt' placeholder='请输入证件号'></input>
+    <view style='display:block;clear:both'></view>
+  </view>
+  <view class='line' style='position: relative'>
+    <text>验证码:</text>
+    <text class='yzm'>1234</text>
+    <input class='verification' data-type='verification' name='verification' bindinput='bindIpt' type='text' placeholder='请输入验证码'></input>
+    
+    <view style='display:block;clear:both'></view>
+  </view>
+
+  <button type='primary' bindtap='bindVerification' style='display:block;width:85%;margin:60rpx auto 0 auto;border:none'>验证</button>
+</view>

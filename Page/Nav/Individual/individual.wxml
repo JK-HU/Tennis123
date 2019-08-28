@@ -1,0 +1,226 @@
+<!--Page/Nav/Individual/individual.wxml  单项赛-列表页-->
+<view class='body'>
+
+<!-- 顶部选择 -->
+<view class='header'>
+  <view class='header_wrap'>
+    <view class="section">
+<<<<<<< HEAD
+      <view class="section__title">合肥 <icon class='iconfont icondown'></icon></view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            <!-- 当前选择：{{array[index]}} -->
+          </view>
+        </picker>
+    </view>
+    <view class="section">
+      <view class="section__title">全部状态 <icon class='iconfont icondown'></icon></view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            <!-- 当前选择：{{array[index]}} -->
+=======
+
+        <picker bindchange="bindRegionChange" value="{{index}}" range="{{array}}">
+         <view class="picker section__title">{{array[index]}} <icon class='iconfont icondown'></icon></view>
+        </picker>
+    </view>
+    <view class="section">
+        <picker bindchange="bindStateChange" value="{{statIndex}}" range="{{state}}">
+          <view class="picker">
+            <view class="picker section__title">{{state[statIndex]}} <icon class='iconfont icondown'></icon></view>
+>>>>>>> 赛事小程序
+          </view>
+        </picker>
+    </view>
+    <view class="section">
+<<<<<<< HEAD
+      <view class="section__title">所有级别 <icon class='iconfont icondown'></icon> </view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            <!-- 当前选择：{{array[index]}} -->
+=======
+        <picker bindchange="bindLevelChange" value="{{levelIndex}}" range="{{level}}">
+          <view class="picker">
+            <view class="picker section__title">{{level[levelIndex]}} <icon class='iconfont icondown'></icon> </view>
+>>>>>>> 赛事小程序
+          </view>
+        </picker>
+    </view>
+    <view class="section">
+<<<<<<< HEAD
+      <view class="section__title">类别 <icon class='iconfont icondown'></icon> </view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            <!-- 当前选择：{{array[index]}} -->
+=======
+      
+        <picker bindchange="bindCategoryChange" value="{{categoryIndex}}" range="{{category}}">
+          <view class="picker">
+            <view class="picker section__title">{{category[categoryIndex]}} <icon class='iconfont icondown'></icon> </view>
+>>>>>>> 赛事小程序
+          </view>
+        </picker>
+    </view>
+  </view>
+</view>
+<!-- 顶部选择结束 -->
+
+<!-- 内容区 -->
+<view class='wrap'>
+<<<<<<< HEAD
+  <view class='wrap_content'>
+    <navigator url='/Page/Nav/Individual_details/individual_details' open-type='navigate' hover-class='none'>
+      <text class='line_title'>("鱼飞"网球俱乐部邀请公开赛单) 2019</text>
+      <view class='content_line'>
+        <icon class='iconfont icontuandui'></icon>
+        <text class='peoples'>6/16</text>
+        <text class='bisai_status'>比赛结束</text>
+      </view>
+      <view class='content_line'>
+        <icon class='iconfont iconjiangbei'></icon>
+        <text class='play_style'>单打</text>
+        <text class='play_status'>open</text>
+        <text class='play_people'>中小学生</text>
+      </view>
+      <view class='content_line'>
+        <icon class='iconfont iconshijian2'></icon>
+        <text class='times'>2019-6-28 08:08</text>
+      </view>
+      <view class='content_line'>
+        <icon class='iconfont icondidian'></icon>
+        <text class='place'>合肥奥体中心网球俱乐部 | 合肥</text>
+      </view>
+    </navigator>
+  </view>
+=======
+
+<scroll-view scroll-y="true" style="height: {{height}}rpx;" bindscrolltolower="lower" bindscroll="scroll" scroll-top="{{scrollTop}}">
+  <view class='wrap_content' wx:for="{{matchArr}}">
+    <navigator url='/Page/Nav/Individual_details/individual_details' open-type='navigate' hover-class='none'>
+      <text class='line_title'>{{item.title}}</text>
+      <view class='content_line'>
+        <icon class='iconfont icontuandui'></icon>
+        <text class='peoples'>{{item.peopleNum}}</text>
+        <!-- <text class='bisai_status'>{{item.matchState}}</text> -->
+      </view>
+      <view class='content_line'>
+        <icon class='iconfont iconjiangbei'></icon>
+        <text class='play_style'>{{item.playStyle}}</text>
+        <!-- <text class='play_status'>{{item.openStyle}}</text> -->
+        <!-- <text class='play_people'>{{item.peopleCategory}}</text> -->
+      </view>
+      <view class='content_line'>
+        <icon class='iconfont iconshijian2'></icon>
+        <text class='times'>{{item.time}}</text>
+      </view>
+      <view class='content_line'>
+        <icon class='iconfont icondidian'></icon>
+        <text class='place'>{{item.adress}}</text>
+      </view>
+    </navigator>
+  </view>
+   <view class='wrap_content' wx:for="{{matchArr}}">
+    <navigator url='/Page/Nav/Individual_details/individual_details' open-type='navigate' hover-class='none'>
+      <text class='line_title'>{{item.title}}</text>
+      <view class='content_line'>
+        <icon class='iconfont icontuandui'></icon>
+        <text class='peoples'>{{item.peopleNum}}</text>
+        <!-- <text class='bisai_status'>{{item.matchState}}</text> -->
+      </view>
+      <view class='content_line'>
+        <icon class='iconfont iconjiangbei'></icon>
+        <text class='play_style'>{{item.playStyle}}</text>
+        <!-- <text class='play_status'>{{item.openStyle}}</text> -->
+        <!-- <text class='play_people'>{{item.peopleCategory}}</text> -->
+      </view>
+      <view class='content_line'>
+        <icon class='iconfont iconshijian2'></icon>
+        <text class='times'>{{item.time}}</text>
+      </view>
+      <view class='content_line'>
+        <icon class='iconfont icondidian'></icon>
+        <text class='place'>{{item.adress}}</text>
+      </view>
+    </navigator>
+  </view>
+  <view class='wrap_content' wx:for="{{matchArr}}">
+    <navigator url='/Page/Nav/Individual_details/individual_details' open-type='navigate' hover-class='none'>
+      <text class='line_title'>{{item.title}}</text>
+      <view class='content_line'>
+        <icon class='iconfont icontuandui'></icon>
+        <text class='peoples'>{{item.peopleNum}}</text>
+        <!-- <text class='bisai_status'>{{item.matchState}}</text> -->
+      </view>
+      <view class='content_line'>
+        <icon class='iconfont iconjiangbei'></icon>
+        <text class='play_style'>{{item.playStyle}}</text>
+        <!-- <text class='play_status'>{{item.openStyle}}</text> -->
+        <!-- <text class='play_people'>{{item.peopleCategory}}</text> -->
+      </view>
+      <view class='content_line'>
+        <icon class='iconfont iconshijian2'></icon>
+        <text class='times'>{{item.time}}</text>
+      </view>
+      <view class='content_line'>
+        <icon class='iconfont icondidian'></icon>
+        <text class='place'>{{item.adress}}</text>
+      </view>
+    </navigator>
+  </view>
+  <view class='wrap_content' wx:for="{{matchArr}}">
+    <navigator url='/Page/Nav/Individual_details/individual_details' open-type='navigate' hover-class='none'>
+      <text class='line_title'>{{item.title}}</text>
+      <view class='content_line'>
+        <icon class='iconfont icontuandui'></icon>
+        <text class='peoples'>{{item.peopleNum}}</text>
+        <!-- <text class='bisai_status'>{{item.matchState}}</text> -->
+      </view>
+      <view class='content_line'>
+        <icon class='iconfont iconjiangbei'></icon>
+        <text class='play_style'>{{item.playStyle}}</text>
+        <!-- <text class='play_status'>{{item.openStyle}}</text> -->
+        <!-- <text class='play_people'>{{item.peopleCategory}}</text> -->
+      </view>
+      <view class='content_line'>
+        <icon class='iconfont iconshijian2'></icon>
+        <text class='times'>{{item.time}}</text>
+      </view>
+      <view class='content_line'>
+        <icon class='iconfont icondidian'></icon>
+        <text class='place'>{{item.adress}}</text>
+      </view>
+    </navigator>
+  </view>
+  <view class='wrap_content' wx:for="{{matchArr}}">
+    <navigator url='/Page/Nav/Individual_details/individual_details' open-type='navigate' hover-class='none'>
+      <text class='line_title'>{{item.title}}</text>
+      <view class='content_line'>
+        <icon class='iconfont icontuandui'></icon>
+        <text class='peoples'>{{item.peopleNum}}</text>
+        <!-- <text class='bisai_status'>{{item.matchState}}</text> -->
+      </view>
+      <view class='content_line'>
+        <icon class='iconfont iconjiangbei'></icon>
+        <text class='play_style'>{{item.playStyle}}</text>
+        <!-- <text class='play_status'>{{item.openStyle}}</text> -->
+        <!-- <text class='play_people'>{{item.peopleCategory}}</text> -->
+      </view>
+      <view class='content_line'>
+        <icon class='iconfont iconshijian2'></icon>
+        <text class='times'>{{item.time}}</text>
+      </view>
+      <view class='content_line'>
+        <icon class='iconfont icondidian'></icon>
+        <text class='place'>{{item.adress}}</text>
+      </view>
+    </navigator>
+  </view>
+
+  </scroll-view>
+
+
+>>>>>>> 赛事小程序
+</view>
+<!-- 内容区结束 -->
+
+</view>

@@ -1,0 +1,14 @@
+/* Page/Nav/RecordDetails/recorddetails.wxss */
+@import "iconfont_individual_details.wxss";
+.body{width: 100%;height: 100%;overflow: hidden}
+.wrap{width: 97%;height: auto;margin: 0 auto;}
+.wrap .card{width: auto;height: auto;border: 1px solid #eee; margin: 10px auto 0 auto;padding: 4px 16px}
+.wrap .card .title{width: 98%;line-height: 30px;text-align: center;display: block;font-size: 18px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.wrap .card .card_line{width: 100%;line-height: 22px;font-size: 13px;color:rgb(73, 73, 73)}
+.wrap .card .card_line icon{font-size: 18px;margin-right: 6px;color: #2196f3}
+.wrap .card .card_line text{}
+.wrap .card .card_line .place{font-size: 14px;color: #000}
+
+
+
+

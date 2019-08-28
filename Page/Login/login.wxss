@@ -1,0 +1,51 @@
+/* Page/Login/login.wxss */
+
+/* 头部 */
+.swiper-tab{
+  width: 100%;
+  border-bottom: 1rpx solid #ccc;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 14px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.swiper-tab-item{
+  width: 50%; 
+  color:#434343;
+}
+.active{
+  color:#2196f3;
+  border-bottom: 1rpx solid #2196f3;
+}
+swiper{
+ text-align: center;
+ height: 400px;
+ 
+}
+<<<<<<< HEAD
+
+=======
+input{caret-color: #2196f3;}
+>>>>>>> 赛事小程序
+/* 登录- 用户名 */
+.login{width: auto;height: auto;padding: 0 10px;margin-top: 3rem;}
+.login .login_wrap{width: 100%;height: 34px;border-bottom: 1px solid #eee;background: #fff;}
+.sign_wrap{margin-bottom:5px;height: 43px !important;}
+.sign{line-height: 41px !important;}
+<<<<<<< HEAD
+.login .login_wrap icon{}
+.login .login_wrap input{display:inline-block;width:80%;height:100%}
+=======
+.login .login_wrap input{display:inline-block;width:80%;height:100%;}
+>>>>>>> 赛事小程序
+.u_name{ font-size: 15px; text-align: left;}
+.login_login,.login_sign{width: 70%;height: 36px;line-height:36px;margin-top: 30px;font-size: 15px;display: block;background: #2196f3;color: #fff}
+.login_login::after{border: none;}
+.login_sign::after{border: none;}
+.getVerification{position: absolute;right: 10px;top: 50%;transform: translateY(-50%);display: block;width: auto;height: 30px;font-size: 12px;background-color: #2196f3;color: #fff}
+.getVerification::after{border: none}
+
+

@@ -1,0 +1,82 @@
+/* Page/Nav/LookScore/lookscore.wxss */
+
+/* 头部 */
+.swiper-tab{
+  width: 100%;
+  border-bottom: 1rpx solid #ccc;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 14px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.swiper-tab-item{
+  width: 30%; 
+  color:#434343;
+}
+.active{
+  color:#2196f3;
+  border-bottom: 1rpx solid #2196f3;
+}
+swiper{
+ text-align: center;
+ height: 400px;
+ 
+}
+
+/* 表格开始 */
+.scrollClass{
+  width: auto;
+  height: auto;
+  display: block;
+  margin-top: 20rpx;
+}
+.scrollClass .table{
+  width: 100%;
+  height: auto;
+}
+.scrollClass .table .table_header{
+  display: flex;
+}
+.scrollClass .table .table_header .th{
+  flex: 1;
+  font-size: 24rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #000;
+  background: white;
+}
+.scrollClass .table .table_header .th:first-child{flex: 2 !important;background: #7166B4;color: #fff}
+
+.scrollClass .table .table_header .th .centerclass{
+  display: block;
+  text-align: center;
+}
+.table_main{
+  width: 100%;
+  height: auto;
+  line-height: 80rpx;
+  display: flex
+}
+.table_main .td{
+  flex: 1;
+  font-size: 26rpx;
+}
+.table_main .td:first-child{flex: 2 !important;color: rgb(6, 103, 177)}
+.table_main:nth-child(2n+1){background-color:#E9F2F9;}
+
+/* 半决赛 */
+.wrap{width: 100%;height: auto;}
+.wrap > text{width: 100%;line-height: 70rpx;text-align: center;font-size: 26rpx;color: #999;padding: 12rpx 0;}
+.wrap .content{width: 100%;height: auto;border-top: 1px solid #eee;border-bottom: 1px solid #eee}
+.wrap .content .line{width: 90%;line-height: 80rpx;border-bottom: 1px solid #eee;display: block;margin: 0 auto}
+.wrap .content .line:last-child{border-bottom: none}
+.wrap .content .line text{font-size: 32rpx;}
+.wrap .content .line .name{float: left}
+.wrap .content .line .nums{float: right;color: #999}
+
+
+
+

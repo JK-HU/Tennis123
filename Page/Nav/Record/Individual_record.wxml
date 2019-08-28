@@ -1,0 +1,61 @@
+<!--Page/Nav/Record/Individual_record.wxml 战绩页面-->
+<view class='body'>
+
+<view class='header'>
+<<<<<<< HEAD
+  <text class='header_title'>某某996</text>
+  <view class='jiang'>
+    <icon class='iconfont iconjiangbei icona'></icon><text class='a'>1</text>
+    <icon class='iconfont iconjiangbei iconb'></icon><text class='b'>1</text>
+  </view>
+  <button class='js_jl'>交手记录</button>
+</view>
+
+<view class='content'>
+  <view class='content_wrap'>
+    <text class='bs_type'>单打比赛</text>
+    <navigator url='/Page/Nav/RecordDetails/recorddetails' open-type='navigate' hover-class='none'>
+      <view class='line_views'>
+        <text class='status'>open</text>
+        <text class='d_s'> (单) </text>
+        <text class='description'> 参赛1次, 胜率66.7% </text>
+        <icon class='iconfont iconright'></icon>
+      </view>
+    </navigator>
+  </view>
+</view>
+=======
+  <text class='header_title'>{{u_name}}</text>
+  <view class='jiang'>
+    <!-- <icon class='iconfont iconjiangbei icona'></icon><text class='a'>1</text> -->
+  </view>
+  <!-- <view class='jiang'>
+    <icon class='iconfont iconjiangbei icona'></icon><text class='a'>1</text>
+    <icon class='iconfont iconjiangbei iconb'></icon><text class='b'>1</text>
+  </view>
+  <button class='js_jl'>交手记录</button> -->
+</view>
+
+  <view class='wrap'>
+
+    <view class='card' wx:for="{{mathchArr}}">
+        
+        <view class="head">
+          <text class='title'>赛事标题: {{item.title}}</text>
+          <text class="time">赛事时间: {{item.time}}</text>
+        </view>
+        <view class='card_line'>
+          <text class='open'>赛事对手: </text>
+          <text>{{item.opponent}}</text>
+        </view>
+        <view class='card_line' style="border-right: none">
+          <text>战绩比分: </text>
+          <text>{{item.score}}</text>
+        </view> 
+        <view class="clear"></view>
+    </view>
+  </view>
+
+>>>>>>> 赛事小程序
+
+</view>

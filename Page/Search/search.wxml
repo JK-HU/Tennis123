@@ -1,0 +1,17 @@
+<!--Page/Search/search.wxml-->
+<view class='body'>
+  <view class='search'>
+    <input placeholder='搜索' bindinput='bindsearch' bindfocus='bindGet' placeholder-style='text-align:{{placeHolderTextStyle}};color:#999' value='{{value}}'></input>
+    <icon type='search' size='16' style='color:#999;left: {{iconLeft}}%;display:{{iconDisplay}}'></icon>
+  </view>
+
+  <view class='user'>
+    <view class='user_line' wx:for="{{searchArr}}">
+      <text class='name'>{{item.api_name}}</text>
+      <text class='dj'>{{item.left_times}}</text>
+      <text class='place'>{{item.api_id}}</text>
+    </view>
+  </view>
+
+
+</view>

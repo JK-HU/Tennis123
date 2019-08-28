@@ -1,0 +1,49 @@
+<!--Page/Group/group.wxml  团队赛-赛事列表  -->
+<view class='body'>
+  <!-- 搜索框 -->
+  <view class='search'>
+    <input placeholder='搜索' bindinput='bindsearch' bindfocus='bindGet' placeholder-style='text-align:{{placeHolderTextStyle}};color:#999' value='{{value}}'></input>
+    <icon type='search' size='16' style='color:#999;left: {{iconLeft}}%;display:{{iconDisplay}}'></icon>
+  </view>
+  <!-- 搜索框结束 -->
+  <!-- 选项 团体赛 -->
+    <button bindtap='navBtnTt' class='btn_tt'>团体赛</button>
+  <!-- 选项 团体赛结束 -->
+
+  <!-- 内容区 -->
+  <view class='wrap'>
+<<<<<<< HEAD
+    <view class='content'>
+      <view class='content_l'>
+        <image class='l_img' style='' src='https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=396447046,3924424001&fm=15&gp=0.jpg'></image>      
+      </view>
+      <view class='content_r'>
+        <text class='content_r_title'>2019武汉网球公开赛城市网球俱乐部巡回赛(第八站)</text>
+        <text class='content_r_time'>2019-07-13</text>
+        <text class='content_r_adress'>甘肃省</text>
+        <text class='content_r_browse'>123</text>
+      </view>
+    </view>
+=======
+  <scroll-view scroll-y="true" style="height: {{height}}rpx;" bindscrolltolower="lower" bindscroll="scroll" scroll-top="{{scrollTop}}">
+    <block wx:for="{{matchArr}}">
+    <navigator url="/Page/Group/GroupNav/groupnav" hover-class='none'>
+      <view class='content'>
+        <view class='content_l'>
+          <image class='l_img' src="{{item.imgSrc}}"></image>
+        </view>
+        <view class='content_r'>
+          <text class='content_r_title'>{{item.title}}</text>
+          <text class='content_r_time'>{{item.time}}</text>
+          <text class='content_r_adress'>{{item.adress}}</text>
+          <text class='content_r_browse'>{{item.look}}</text>
+        </view>
+      </view>
+    </navigator>
+    </block>
+  </scroll-view>
+>>>>>>> 赛事小程序
+  </view>
+
+  <!-- 内容区结束 -->
+</view>

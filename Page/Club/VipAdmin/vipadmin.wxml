@@ -1,0 +1,19 @@
+<!--Page/Club/VipAdmin/vipadmin.wxml 会员管理页面 -->
+<view class='body'>
+  <view class='search'>
+    <input placeholder='搜索' bindinput='bindsearch' bindfocus='bindGet' placeholder-style='text-align:{{placeHolderTextStyle}};color:#999' value='{{value}}'></input>
+    <icon type='search' size='16' style='color:#999;left: {{iconLeft}}%;display:{{iconDisplay}}'></icon>
+  </view>
+
+  <view class='user'>
+    <view class='user_line' wx:for='{{searchArr}}'>
+      <text class='nickname'>{{item.nickname}}</text>
+      <view>
+        <text class='status'>{{item.status}}</text>
+        <text class='name'>{{item.name}}</text>
+        <view class='clear'></view>
+      </view>
+      <text class='phone'>{{item.phone}}</text>
+    </view>
+  </view>
+</view>

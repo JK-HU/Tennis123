@@ -1,0 +1,28 @@
+<!--Page/Nav/LookScore/LookScoreTable/lookscoretable.wxml 点击查看小组比赛的表格 -->
+<scroll-view scroll-x="true" class='scrollClass' wx:for="{{mainArray}}">
+
+  <view class='table'>
+    <view class='header'>
+      <block  wx:for="{{item.group}}" wx:for-item="group">
+        <text class='bgcenter'>{{group.xz}}</text>
+      </block>
+      <block  wx:for="{{item.gp}}" wx:for-item="group">
+        <text class='bgcenter'>{{group.name}}</text>
+      </block>
+
+      <text class='bgcenter'>胜场</text>
+      <text class='bgcenter'>净胜局</text>
+      <text class='bgcenter'>排名</text>
+    </view>
+    <view class='tr' wx:for="{{item.gp}}" wx:for-item="group">
+      <text>{{group.name}}</text>
+      <text>{{group.bf}}</text>
+      <text>{{group.win}}</text>
+      <text>{{group.onlyWin}}</text>
+      <text>{{group.sort}}</text>
+    </view>
+  </view>
+
+</scroll-view>
+
+

@@ -1,0 +1,128 @@
+<!--Page/Ranking/EntranceSD/entrancesd.wxml 双打排行榜 -->
+<view class='body'>
+
+<!-- 顶部选择 -->
+<view class='header'>
+  <view class='header_wrap'>
+    <view class="section">
+<<<<<<< HEAD
+      <view class="section__title">合肥 <icon class='iconfont icondown'></icon></view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            <!-- 当前选择：{{array[index]}} -->
+=======
+      
+        <picker bindchange="bindRegionChange" value="{{regionIndex}}" range="{{regionArr}}">
+          <view class="picker">
+            <view class="picker section__title">{{regionArr[regionIndex]}} <icon class='iconfont icondown'></icon></view>
+>>>>>>> 赛事小程序
+          </view>
+        </picker>
+    </view>
+    <view class="section">
+<<<<<<< HEAD
+      <view class="section__title">选择年份 <icon class='iconfont icondown'></icon></view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            <!-- 当前选择：{{array[index]}} -->
+=======
+        <picker bindchange="bindYearChange" value="{{yearIndex}}" range="{{yearArr}}">
+          <view class="picker">
+            <view class="picker section__title">{{yearArr[yearIndex]}} <icon class='iconfont icondown'></icon></view>
+>>>>>>> 赛事小程序
+          </view>
+        </picker>
+    </view>
+    <view class="section">
+<<<<<<< HEAD
+      <view class="section__title">9.0双 <icon class='iconfont icondown'></icon> </view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            <!-- 当前选择：{{array[index]}} -->
+=======
+        <picker bindchange="bindDstyleChange" value="{{dstyleIndex}}" range="{{dArr}}">
+          <view class="picker">
+            <view class="picker section__title">{{dArr[dstyleIndex]}} <icon class='iconfont icondown'></icon> </view>
+>>>>>>> 赛事小程序
+          </view>
+        </picker>
+    </view>
+    <view class="section">
+<<<<<<< HEAD
+      <view class="section__title">成人 <icon class='iconfont icondown'></icon> </view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            <!-- 当前选择：{{array[index]}} -->
+=======
+        <picker bindchange="bindPeopleChange" value="{{peopleIndex}}" range="{{peopleArr}}">
+          <view class="picker">
+            <view class="picker section__title">{{peopleArr[peopleIndex]}} <icon class='iconfont icondown'></icon> </view>
+>>>>>>> 赛事小程序
+          </view>
+        </picker>
+    </view>
+  </view>
+</view>
+<!-- 顶部选择结束 -->
+
+<!-- 仅看当前用户 -->
+<view class='body-view'>
+  <text>仅看当前用户</text>
+  <switch bindchange="switchChange"></switch>
+</view>
+<!-- 仅看当前用户结束 -->
+
+<!-- 内容 -->
+<view class='content'> 
+<<<<<<< HEAD
+  <view class='wrap'>
+  <navigator url="/Page/Nav/Record/Individual_record"  open-type='navigate' hover-class='none'>
+    <view class='lines'>
+      <text class='name'>皇上</text>
+      <text class='grade'>9.0</text>
+      <text class='place'>秦皇岛</text>
+      <text class='ranking'>第 1 名</text>
+    </view>
+    <view class='lines'>
+      <text class='distance'>积分: 8859</text>
+      <text class='distance'>冠军: 8</text>
+      <text class='distance'>亚军: 10</text>
+    </view>
+    <view class='lines'>
+      <text class='distance'>参赛: 28</text>
+      <text class='distance'>胜场/总场: 92/128</text>
+      <text class='distance'>胜率: 71.9%</text>
+    </view>
+    </navigator>
+  </view>
+</view>
+<!-- 内容结束 -->
+
+=======
+<scroll-view scroll-y="true" style="height: {{height}}rpx;" bindscrolltolower="lower" bindscroll="scroll" scroll-top="{{scrollTop}}">
+  <view class='wrap'>
+    <navigator url="/Page/Nav/Record/Individual_record"  open-type='navigate' hover-class='none'>
+      <view class='lines'>
+        <text class='name'>皇上</text>
+        <text class='grade'>9.0</text>
+        <text class='place'>秦皇岛</text>
+        <text class='ranking'>第 1 名</text>
+      </view>
+      <view class='lines'>
+        <text class='distance'>积分: 8859</text>
+        <text class='distance'>冠军: 8</text>
+        <text class='distance'>亚军: 10</text>
+      </view>
+      <view class='lines'>
+        <text class='distance'>参赛: 28</text>
+        <text class='distance'>胜场/总场: 92/128</text>
+        <text class='distance'>胜率: 71.9%</text>
+      </view>
+    </navigator>
+  </view>
+
+</scroll-view>
+</view>
+<!-- 内容结束 -->
+>>>>>>> 赛事小程序
+</view>

@@ -1,0 +1,29 @@
+/* Page/Group/group.wxss */
+@import "iconfont_individual_details.wxss";
+
+.body{width: 100%;height: 100%;overflow: hidden}
+.search{width: auto;height: 36px;background: rgb(231, 231, 231);position: relative}
+.search input{width: 80%;height: 28px;background: #fff;border-radius: 5px;display: block;position: absolute;left: 50%;top:50%;transform: translate(-50%,-50%);font-size: 26rpx;padding: 0 29px;color: #000;caret-color: #2196f3}
+.search icon{position: absolute;top: 50%;transform: translate(-50%,-50%);display: block;}
+
+/* 导航-团体赛-btn_tt */
+.btn_tt{width:40%;line-height:35px;margin: 18px 0 10px 15px;background-color: #2196f3;color: #fff;border: none}
+/* 内容区 */
+.wrap{width: 100%;height: auto;overflow: hidden}
+.wrap .content{width: auto;height: auto;padding: 8rpx 18rpx;display: flex;border-bottom: 1px solid #ddd}
+.wrap .content .content_l{flex: 1;}
+.wrap .content .content_l .l_img{width: 155px;height: 100px;border-radius: 2px}
+.wrap .content .content_r{flex: 2;margin-left: 10px;}
+.wrap .content .content_r .content_r_title{width: 100%;height: 85rpx;line-height:43rpx;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:2;overflow: hidden;font-size: 30rpx;}
+.wrap .content .content_r .content_r_time{font-size: 26rpx;display: block;margin: 8rpx auto;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.wrap .content .content_r .content_r_time::before{content:'时间:';margin-right: 18rpx;color: #2196f3;}
+
+.wrap .content .content_r .content_r_adress{font-size: 26rpx;display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap}
+.wrap .content .content_r .content_r_adress::before{content: '地点:';color: #2196f3;margin-right: 18rpx;}
+
+.wrap .content .content_r .content_r_browse{font-size: 22rpx;display: block;margin-top: 6rpx;color: #2196f3;}
+.wrap .content .content_r .content_r_browse::before{content: '浏览次数:';margin-right: 18rpx;color: #2196f3;}
+
+
+
+

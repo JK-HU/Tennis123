@@ -1,0 +1,33 @@
+/* Page/Ranking/EntranceSD/entrancesd.wxss */
+
+@import "iconfont_individual_details.wxss";
+.body{width: 100%;height: 100%;overflow: auto}
+.header{width: 100%;height: 48px;border-bottom:1px solid #eee;position: fixed;top: 0;background: #F6F8F8;z-index: 994}
+.header .header_wrap{width: 95%;line-height: 48px;margin: 0 auto;display: flex}
+.header .header_wrap .section{ flex: 1; text-align: center; }
+.header .header_wrap .section .section__title{ font-size: 15px; color: rgb(88, 87, 87); }
+
+/* body-view 近看当前用户 */
+.body-view{
+  width: auto;
+  height: 38px;
+  color: rgb(83, 83, 83);
+  padding: 9rpx 20rpx;
+  margin-top: 52px;
+  border-bottom: 1px solid #eee
+}
+.body-view > text{font-size: 35rpx}
+.body-view switch{float: right}
+/* body-view 近看当前用户结束 */
+
+/* 内容 */
+.content{width: auto;height: auto;}
+.content .wrap{width: auto;height: auto;padding: 18rpx 20rpx;border-bottom: 1rpx solid rgb(230, 230, 230)}
+.content .wrap .lines{width: auto;line-height: 24rpx;padding: 5px 3px;}
+.content .wrap .lines:first-child{margin-bottom: 9px;}
+.content .wrap .lines text{font-size: 28rpx;color: rgb(157, 157, 158)}
+.content .wrap .lines .name{font-size: 35rpx;color: rgb(15, 68, 126)}
+.content .wrap .lines .grade{padding: 2px 6px;background: #B857B5;color: #fff;margin: 0 5px;border-radius: 4px;}
+.content .wrap .lines .place{color: #000}
+.content .wrap .lines .ranking{font-size: 35rpx;color: #000;float: right;}
+.content .wrap .lines .distance{margin-right: 13px}

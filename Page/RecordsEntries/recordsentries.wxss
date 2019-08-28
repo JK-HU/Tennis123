@@ -1,0 +1,159 @@
+/* Page/RecordsEntries/recordsentries.wxss */
+@import "iconfont_individual_details.wxss";
+.body{width: 100%;height: 100%;overflow: auto;background: #fff}
+.name,.place{width: 90%;border: 1px solid #eee}
+.time{width: 90%;border: 1px solid #eee}
+
+.name,.time{line-height: 60rpx;padding: 0 20rpx;display: flex;margin: 20rpx auto;}
+<<<<<<< HEAD
+.place{margin: 6rpx auto 20rpx auto;}
+.name .ssname{padding: 2rpx 12rpx;width: 100%;line-height: 50rpx;display: block}
+.name .section{flex: 1}
+.name .other{flex: 1}
+.picker{font-size: 28rpx;}
+
+/* 多选框 */
+  label.checkbox {
+      padding-left: 68rpx;
+      font-size: 32rpx;
+  }
+  checkbox .wx-checkbox-input{
+      width: 22rpx;
+      height: 22rpx;
+  }
+  
+ /* 选中后多选框样式 */
+  checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+      border: 1rpx solid transparent;
+      background-color: #da2728;
+  }
+
+  /* 选中后对勾样式 */
+  checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+      width: 22rpx;
+      height: 22rpx;
+      line-height: 22rpx;
+      text-align: center;
+      font-size:22rpx;
+      color:#fff;
+      background: transparent;
+      transform: translate(-50%, -50%) scale(1);
+      -webkit-transform: translate(-50%, -50%) scale(1);
+  }
+
+/* 单选 */
+.radio-group {
+
+}
+.radio-group label {
+    display: block;
+    height: 86rpx;
+    line-height: 86rpx;
+    font-size: 32rpx;
+    border-bottom: 1rpx solid #e2e2e2;
+    box-sizing: border-box;
+    padding: 0 20rpx;
+}
+
+radio {
+    width: 38rpx;
+=======
+.place{margin: 20rpx auto}
+.name .ssname{padding: 2rpx 12rpx;width: 100%;line-height: 50rpx;display: block;font-size: 28rpx;}
+.name .section{flex: 1}
+.name .other{flex: 1}
+.picker{font-size: 28rpx;}
+.placeIpt{padding: 2rpx 12rpx;width: 100%;line-height: 50rpx;display: block;font-size: 28rpx;}
+
+/* 多选框 */
+label.checkbox {
+  /* padding-right: 80rpx; */
+  font-size: 32rpx;
+  width: 32%;
+  line-height: 70rpx;
+  float: left;
+}
+checkbox .wx-checkbox-input{
+  width: 22rpx;
+  height: 22rpx;
+}
+  
+ /* 选中后多选框样式 */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+  border: 1rpx solid transparent;
+  background-color: #da2728;
+}
+
+  /* 选中后对勾样式 */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+  width: 22rpx;
+  height: 22rpx;
+  line-height: 22rpx;
+  text-align: center;
+  font-size:22rpx;
+  color:#fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+/* 单选 */
+.radio-group {
+  display: flex
+}
+.radio-group label {
+  flex: 1;
+  height: 86rpx;
+  line-height: 86rpx;
+  font-size: 32rpx;
+  border-bottom: 1rpx solid #e2e2e2;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+}
+
+radio {
+  width: 38rpx;
+>>>>>>> 赛事小程序
+}
+
+/* 单选框未选中 */
+radio .wx-radio-input {
+<<<<<<< HEAD
+    width: 24rpx;
+    height: 24rpx;
+    border-radius: 50%;
+=======
+  width: 24rpx;
+  height: 24rpx;
+  border-radius: 50%;
+>>>>>>> 赛事小程序
+}
+
+
+/* 单选框选中后对勾样式 */
+radio .wx-radio-input.wx-radio-input-checked::before{
+<<<<<<< HEAD
+    border-radius: 50%;
+    width: 44rpx;
+    height: 44rpx;
+    line-height: 44rpx;
+    text-align: center;
+    font-size: 26rpx;   
+    color:#fff;
+    background-color: #da2728;
+    border-color: #da2728;
+}
+=======
+  border-radius: 50%;
+  width: 44rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  text-align: center;
+  font-size: 26rpx;   
+  color:#fff;
+  background-color: #da2728;
+  border-color: #da2728;
+}
+.section{ width:90%; flex: 1;margin:0 auto; }
+>>>>>>> 赛事小程序
+.submit{display: block;width: 90%;line-height: 80rpx;margin: 60rpx auto 0 auto;background: #2196f3;border: none;color: #fff}

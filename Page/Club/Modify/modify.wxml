@@ -1,0 +1,24 @@
+<!--Page/Club/Modify/modify.wxml 修改俱乐部信息 -->
+<view class='body'>
+  <view class='line'>
+  <text style='font-size:13px'>名称:</text>
+  <input class='clubName' type='text' bindinput="getTitle" value='{{titleVal}}' placeholder='请输入16位以下俱乐部名称' placeholder-style='font-size:13px'></input>
+  <text style='clear:both'></text>
+  </view>
+  <view class='descript'>
+    <text>俱乐部介绍</text>
+    <textarea value='{{descriptVal}}' bindinput="getDescript" placeholder='请输入俱乐部介绍' placeholder-style='font-size:13px'></textarea>
+  </view>
+  
+  <view class='status'>
+    <radio-group class="radio-group" bindchange="radioChange">
+      <label wx:for="{{status}}" wx:key="{{index}}">
+        <radio value="{{item.sclass_id}}" />{{item.sclass_name}}
+      </label>
+    </radio-group>
+  </view>
+
+  <button class='save' bindtap='bindSave'>保存</button>
+
+
+</view>

@@ -1,0 +1,9 @@
+<!--Page/Club/CreateList/createlist.wxml 创建俱乐部列表-->
+<navigator url='/Page/Club/CreateComplete/createcomplete' hover-class='none' open-type='navigate'>
+  <view class='namelist' style="display:{{isblock?'block':'none'}}">
+    <text>张三</text>
+    <icon class='iconfont iconright' style='float:right'></icon>
+    <text style='clear:both'></text>
+  </view>
+</navigator>
+

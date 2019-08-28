@@ -1,0 +1,68 @@
+/* Page/Nav/Navtion/navtion.wxss */
+/*
+  在使用flex布局时,遇到一个问题. 就是在将两个icon和text放在一个flex=1时,设置高度时 并不能作用在dom本身上,这个问题待解决
+*/
+/* 引入icon文件,该icon文件只用于nav页导航 */
+@import "iconfont_nav.wxss";
+
+.body{
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.slide-image{width: 100%;display: block;}
+.login{
+  display: block;
+<<<<<<< HEAD
+  width: 46%;
+=======
+  width: 42%;
+>>>>>>> 赛事小程序
+  line-height: 41px;
+  margin: 3rem auto 5px auto;
+  border: none;
+  background: rgba(0,0,0,0);
+  box-shadow: none;
+  color: #2196f3;
+}
+.login::after{
+  border: 1px solid #2196f3;
+}
+.login_tit{
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  color: rgb(128, 125, 125);
+}
+/* 导航列表 */
+.nav{
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.nav .nav_chil{
+  flex: 1;
+  line-height: 95px;
+  text-align: center;
+  font-size: 16px;
+  border-right: 1px solid #eee;
+  border-top: 1px solid #eee;
+
+}
+.nav .nav_chil:nth-child(3n+3){
+  border-right: none;
+}
+.icons{
+  display: block;
+  height: 22px;
+}
+.iconfont{
+  display: block;
+  color: #2196f3;
+  font-size: 27px;
+  height: 29px;
+}
+.icon_txt{
+  font-size:14px;
+}

@@ -1,0 +1,112 @@
+/* Page/Nav/RecordScoreDetails/recordscoredetails.wxss */
+@import "iconfont_individual_details.wxss";
+body{background: #fff}
+.tab-h{ height: 80rpx;width: 100%; box-sizing: border-box;overflow: hidden;line-height: 80rpx;background: #fff; font-size: 16px; white-space: nowrap;position: fixed;top: 0; left: 0; z-index: 99;border-bottom: 1px solid #efefef}
+.tab-item{margin:0 36rpx;display: inline-block;}
+.tab-item.active{color: #2196f3;position: relative;}
+.tab-item.active:after{ content: "";display: block;height: 8rpx;width: 180rpx;background: #2196f3;position: absolute; bottom: 0;left: 5rpx;border-radius: 16rpx;}
+.item-ans{ width: auto;height: auto;justify-content: space-between; box-sizing: border-box; align-items: center;border-bottom: 1px solid #F2F2F2;/*padding: 30rpx 30rpx 20rpx 30rpx;*/ }
+.eliminate{width: 88% !important;padding: 30rpx 30rpx;display: block;margin: 0 auto;border-top: 2px solid #2196f3;border-right: 1px solid #eee;border-left: 1px solid #eee;border-bottom: 1px solid #eee}
+.item-ans .group{display: block;width:55rpx;line-height:40rpx;font-size: 22rpx;border-bottom: 2px solid #2196f3;text-align: center;}
+.item-ans .groupMes{display:block;width: auto;line-height: 30px;font-size: 22rpx;}
+.iconright{float: right}
+
+.avatar{width: 100rpx;height: 100rpx;position: relative;padding-right: 30rpx;}
+.avatar .img{width: 100%;height: 100%;}
+.avatar .doyen{width: 40rpx;height: 40rpx;position: absolute;bottom: -2px;right: 20rpx;}
+.expertInfo{font-size: 24rpx;flex-grow: 2;color: #B0B0B0;line-height: 1.5em;}
+.expertInfo .name{font-size: 16px;color:#000;margin-bottom: 6px;}
+.askBtn{ width: 120rpx;height: 60rpx;line-height: 60rpx;text-align: center;font-size: 14px; border-radius: 60rpx;border: 1px solid #2196f3; color:#2196f3;}
+.scoll-h{height: 100%;}
+
+/* 小组赛和淘汰赛按钮 */
+.btns{
+  display: block;
+  margin: 120rpx 0 26rpx 0;
+  text-align: center;
+}
+.btns button{display: inline-block;padding: 6rpx 40rpx;width: auto;line-height: 60rpx;font-size: 30rpx}
+.btns .miniMatch{margin-right: 60rpx;}
+.btns .eliminateMatch{margin-left: 60rpx;}
+.eliminateBtn{display: block;width: 28%;line-height: 70rpx;margin: 30rpx auto;color:#2196f3;border: none}
+.eliminateBtn::after{content: '';border:2rpx solid #2196f3;}
+
+/* 轮次 */
+.roundNum{display: block;text-align: center;padding-top: 30rpx;border-top: 1px solid #efefef}
+.roundNum button{margin: 10rpx 20rpx;width:200rpx;height: 75rpx;line-height: 75rpx;display: inline-block;float: left}
+
+/* 表格 */
+.scrollClass{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 20rpx;
+}
+.scrollClass .table{
+  width: 100%;
+  height: 100%;
+}
+.scrollClass .table .header{
+    display: block;
+    white-space: nowrap;
+}
+.scrollClass .table .header text{
+  display: inline-block;
+  font-size: 24rpx;
+  width: 150rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #000;
+  background:#fff;
+  border-right: 1px solid rgb(183, 176, 226);
+  border-bottom: 1px solid rgb(183, 176, 226);
+  text-align: center;
+}
+.scrollClass .table .tr{
+  display: block;
+  white-space: nowrap;
+}
+.scrollClass .table .tr text{
+  display: inline-block;
+  font-size: 24rpx;
+  /* width: auto; */
+  width: 304rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #000;
+  background:#fff;
+  border-right: 1px solid rgb(183, 176, 226);
+  border-bottom: 1px solid rgb(183, 176, 226);
+  text-align: center;
+}
+.scrollClass .tbody .tr .td{
+  display: inline-block;
+  width: 152px;
+  /* height: 33px; */
+  text-align: center;
+  vertical-align: middle;
+  font-size: 26rpx;
+}
+.scrollClass .tbody .tr .td input{
+  display: inline-block;
+  width: 97%;
+  height: 33px;
+  border: 1px solid#2196f3;
+  font-size: 30rpx;
+  caret-color: #2196f3;
+}
+.bgcenter{
+  background:#E2EFDB !important;
+}
+
+/* 淘汰 */
+.item-ans .item-line{width: auto;line-height: 60rpx;padding: 6rpx 0;border-bottom: 1px solid #eee}
+.item-ans .item-line:last-child{border-bottom: none}
+.item-ans .item-line .item-line-name{float: left;color: #2196f3;font-size: 28rpx;}
+.item-ans .item-line .item-icon{float: right;margin: 5px 22rpx 0 0;}
+.item-ans .item-line .item-line-score{float: right;color: #2196f3;font-size: 40rpx;}
+
+.td-center{
+  display: flex;
+  align-items: center;
+}

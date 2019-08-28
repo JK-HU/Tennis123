@@ -1,0 +1,26 @@
+<!--Page/Club/CreateClub/createClub.wxml 创建俱乐部 -->
+<view class='body'>
+<view class='line'>
+<text style='font-size:13px'>名称:</text>
+<<<<<<< HEAD
+<input class='clubName' type='text' placeholder='请输入16位以下俱乐部名称' placeholder-style='font-size:13px'></input>
+=======
+<input class='clubName' type='text' bindinput="getTitle" value='{{titleVal}}' placeholder='请输入16位以下俱乐部名称' placeholder-style='font-size:13px'></input>
+>>>>>>> 赛事小程序
+<text style='clear:both'></text>
+</view>
+<view class='descript'>
+  <text>俱乐部介绍</text>
+<<<<<<< HEAD
+  <textarea value='' placeholder='请输入俱乐部介绍' placeholder-style='font-size:13px'></textarea>
+</view>
+
+<button class='save'>保存</button>
+=======
+  <textarea value='{{descriptVal}}' bindinput="getDescript" placeholder='请输入俱乐部介绍' placeholder-style='font-size:13px'></textarea>
+</view>
+
+<button class='save' bindtap='bindSave'>保存</button>
+>>>>>>> 赛事小程序
+
+</view>

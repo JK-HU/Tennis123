@@ -1,0 +1,4 @@
+/* Page/Club/CreateList/createlist.wxss */
+@import "iconfont_individual_details.wxss";
+.namelist{width: 85%;margin: 0 auto;line-height: 72rpx;padding: 0 12rpx;border-bottom: 2rpx solid rgb(219, 219, 219);}
+.namelist > text{font-size: 30rpx}

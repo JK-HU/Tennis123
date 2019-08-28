@@ -1,0 +1,45 @@
+<!--Page/Club/CreateComplete/createcomplete.wxml 创建完成-->
+<view class='wrap'>
+  <text class='name'>{{clubPeopleName}}</text>
+  <view class='content'>
+   <block wx:for="{{detailArr}}">
+    <view class='content_line'>
+      <navigator url='{{item.url}}' hover-class='none' open-type='navigate'>
+        <text class='line_descript'>{{item.descript}}</text>
+        <icon class='iconfont iconright' style='float:right'></icon>
+        <text class='line_val'>{{item.val}}</text>
+        <view style='clear:both'></view>
+      </navigator>
+    </view>
+    </block>
+    <view class='content_line'>
+      <text class='line_descript'>简介</text>
+      <text class='line_val introduction'>{{introduction}}</text>
+      <view style='clear:both'></view>
+    </view>
+
+  <view class='line' style='margin-top:50rpx;'>
+    <button data-type='dd' bindtap='buttonTap' hover-class='none' style='margin-right:30rpx;'>单打录比分</button>
+    <button data-type='sd' bindtap='buttonTap' hover-class='none'>双打录比分</button>
+  </view>
+  <view class='line'>
+    <button data-type='fb' bindtap='buttonTap' hover-class='none'>发布活动</button>
+  </view>
+  <view class='line'>
+    <button data-type='hd' bindtap='buttonTap' hover-class='none'>活动列表</button>
+  </view>
+  <view class='line'>
+    <button data-type='dn' bindtap='buttonTap' hover-class='none'>队内赛列表</button>
+  </view>
+  <view class='line'>
+    <button data-type='xg' bindtap='buttonTap' hover-class='none'>修改俱乐部信息</button>
+  </view>
+
+
+
+
+
+  </view>
+
+
+</view>

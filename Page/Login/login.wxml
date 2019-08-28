@@ -1,0 +1,60 @@
+<!--Page/Login/login.wxml 登录和注册页面 -->
+<view class='body'>
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">登录</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">注册</view>
+  </view>
+  
+  <swiper current="{{currentTab}}" duration='300'>
+    <swiper-item catchtouchmove="stopTouchMove">
+    <view class='login'>
+      <view class='login_wrap'>
+        <icon></icon>
+        <input value='' bindinput='loginYHM' name='u_name' data-types='names' type='text' placeholder='手机号/用户名' class='u_name' placeholder-style='font-size:15px'></input>
+      </view>
+      <view class='login_wrap'>
+        <icon></icon>
+        <input value='' bindinput='loginYHM' data-types='password' type='text' password='true' placeholder='密码' class='u_name' placeholder-style='font-size:15px'></input>
+      </view>
+       <button class='login_login' bindtap='login_login'>登录</button>
+    </view>
+    </swiper-item>
+    <swiper-item catchtouchmove="stopTouchMove">
+    <view class='sign'>
+      <view class='login'>
+        <view class='login_wrap sign_wrap'>
+<<<<<<< HEAD
+          <input value='' type='text' placeholder='账号' class='u_name sign' placeholder-style='font-size:15px'></input>
+        </view>
+        <view class='login_wrap sign_wrap' style='position: relative'>
+          <input value='' type='text' style='width:auto;margin-right:113px;' placeholder='手机号' class='u_name sign' placeholder-style='font-size:15px'></input>
+          <button class='getVerification' disabled="{{isDisabled}}" bindtap='bindGetVerification'>{{isDisabled?'倒计时('+countDown+'s)':'获取验证码'}}</button>
+        </view>
+        <view class='login_wrap sign_wrap'>
+          <input value='' type='text' placeholder='验证码' class='u_name sign' placeholder-style='font-size:15px'></input>
+        </view>
+        <view class='login_wrap sign_wrap'>
+          <input value='' type='text' password='true' placeholder='密码' class='u_name sign' placeholder-style='font-size:15px'></input>
+        </view>
+        <button class='login_sign'>注册</button>
+=======
+          <input type='text' bindinput='signZc' data-types='zh' placeholder='账号' class='u_name sign' placeholder-style='font-size:15px'></input>
+        </view>
+        <view class='login_wrap sign_wrap' style='position: relative'>
+          <input type='text' bindinput='signZc' data-types='phone' style='width:auto;margin-right:113px;' placeholder='手机号' class='u_name sign' placeholder-style='font-size:15px'></input>
+          <button class='getVerification' disabled="{{isDisabled}}" bindtap='bindGetVerification'>{{isDisabled?'倒计时('+countDown+'s)':'获取验证码'}}</button>
+        </view>
+        <view class='login_wrap sign_wrap'>
+          <input type='text' bindinput='signZc' data-types='verif' placeholder='验证码' class='u_name sign' placeholder-style='font-size:15px'></input>
+        </view>
+        <view class='login_wrap sign_wrap'>
+          <input type='text' password='true' bindinput='signZc' data-types='psword' placeholder='密码' class='u_name sign' placeholder-style='font-size:15px'></input>
+        </view>
+        <button class='login_sign' bindtap='login_sign'>注册</button>
+>>>>>>> 赛事小程序
+      </view>
+    </view>
+    </swiper-item>
+  </swiper>
+
+</view>

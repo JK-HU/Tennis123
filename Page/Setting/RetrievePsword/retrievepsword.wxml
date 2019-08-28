@@ -1,0 +1,92 @@
+<!--Page/Setting/RetrievePsword/retrievepsword.wxml  找回密码  -->
+<view class='body'>
+<<<<<<< HEAD
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">第一步</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">第二步</view>
+    <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">第三步</view>
+  </view>
+  
+  <swiper current="{{currentTab}}" duration='300'>
+
+    <swiper-item catchtouchmove="stopTouchMove">
+      <view class='FirstStep'>
+        <view class='wrap'>
+          <text>手机号:</text>
+          <input type='text' value='' data-type='phone' name='phone' bindinput='bindData' placeholder='请输入用户名'></input>
+          <view class='clear'></view>
+        </view>
+        <view class='wrap'>
+          <text>验证码:</text>
+          <text class='vertext'>1243</text>
+          <input type='text' class='verif' value='' data-type='verification' name='verification' bindinput='bindData' placeholder='请输入验证码'></input>
+          <view class='clear'></view>
+        </view>
+
+        <button type='primary' bindtap='nextTo' class='btn'>下一步</button>
+      </view>
+    </swiper-item>
+
+    <swiper-item catchtouchmove="stopTouchMove">
+=======
+
+    <swiper-item current="{{currentTab}}" catchtouchmove="stopTouchMove">
+>>>>>>> 赛事小程序
+      <view class='SecondStep'>
+        <view class='wrap'>
+          <text>手机号</text>
+          <button bindtap='getVerification' size='mini' type='primary' disabled="{{isDisabled}}" hover-class='none'>{{isDisabled?'倒计时('+countDown+'s)':'获取验证码'}}</button>
+<<<<<<< HEAD
+          <input type='text' name='phone' value=''></input>
+=======
+          <input type='text' data-type='phone' bindinput='bindData' name='phone' value='' placeholder='请输入手机号'></input>
+>>>>>>> 赛事小程序
+          <view class='clear'></view>
+        </view>
+        <view class='wrap'>
+          <text>验证码</text>
+<<<<<<< HEAD
+          <input type='text' data-type='verification' ></input>
+          <view class='clear'></view>
+        </view>
+
+        <button type='primary' bindtap='nextTo' class='btn'>下一步</button>
+      </view>
+    </swiper-item>
+
+    <swiper-item catchtouchmove="stopTouchMove">
+      <view class='ThirdStep'>
+        <view class='wrap'>
+          <text>新密码</text>
+          <input type='text' data-type='newPsWord' placeholder='输入新的密码'></input>
+=======
+          <input type='text' data-type='verification' bindinput='getVerificationVal'></input>
+          <view class='clear'></view>
+        </view>
+        <view class='wrap'>
+          <text>新密码</text>
+          <input type='text' data-type='newPsWord' bindinput='getPsword' placeholder='输入新的密码'></input>
+>>>>>>> 赛事小程序
+          <view class='clear'></view>
+        </view>
+        <view class='wrap'>
+          <text>确认密码</text>
+<<<<<<< HEAD
+          <input type='text' data-type='configNewPsWord' placeholder='确认新密码'></input>
+          <view class='clear'></view>
+        </view>
+      </view>
+    </swiper-item>
+
+  </swiper>
+
+=======
+          <input type='text' data-type='configNewPsWord' bindinput='getPsword' placeholder='确认新密码'></input>
+          <view class='clear'></view>
+        </view>
+        <button type='primary' class='confirm' bindtap='changeConfirm' style='margin:60rpx auto 0 auto;display:block;width:90%;'>确认更改</button>
+      </view>
+    </swiper-item>
+
+>>>>>>> 赛事小程序
+</view>

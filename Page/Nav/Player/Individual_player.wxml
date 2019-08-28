@@ -1,0 +1,14 @@
+<!--Page/Nav/player/Individual_player.wxml 单项赛-报名选手-->
+<view class='body'>
+  <view class='wrap'>
+  <navigator url='/Page/Nav/Record/Individual_record' open-type='navigate' hover-class='none'>
+    <text class='xuhao'>1</text>
+    <view class='content'>
+      <text class='title'>某某人</text>
+      <text class='jifen'>11</text>
+      <text class='success'>0</text><text class='fail'>0</text>
+    </view>
+    <view style='clear:both'></view>
+    </navigator>
+  </view>
+</view>

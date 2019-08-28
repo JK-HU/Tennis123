@@ -1,0 +1,48 @@
+/* Page/Nav/LookScore/LookScoreTable/lookscoretable.wxss */
+
+.scrollClass{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 20rpx;
+}
+.scrollClass .table{
+  width: 100%;
+  height: 100%;
+}
+.scrollClass .table .header{
+    display: block;
+    white-space: nowrap;
+}
+.scrollClass .table .header text{
+  display: inline-block;
+  font-size: 24rpx;
+  width: 150rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #000;
+  background:#fff;
+  border-right: 1px solid rgb(183, 176, 226);
+  border-bottom: 1px solid rgb(183, 176, 226);
+  text-align: center;
+}
+.scrollClass .table .tr{
+  display: block;
+  white-space: nowrap;
+}
+.scrollClass .table .tr text{
+  display: inline-block;
+  font-size: 24rpx;
+  width: 150rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #000;
+  background:#fff;
+  border-right: 1px solid rgb(183, 176, 226);
+  border-bottom: 1px solid rgb(183, 176, 226);
+  text-align: center;
+}
+.bgcenter{
+  background:#E2EFDB !important;
+}
+

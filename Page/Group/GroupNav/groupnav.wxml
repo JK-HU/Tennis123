@@ -1,0 +1,36 @@
+<!--Page/Group/GroupNav/groupnav.wxml 赛事列表点进去的赛事导航页 -->
+<view class='wrap'>
+  <!-- 轮播图 -->
+  <view>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 轮播图结束 -->
+  <!-- 包含项目 -->
+  <text class='nav_title'>包含项目</text>
+  <view class='nav_bh'>
+    <button size='mini' wx:for="{{projectNav}}" class='nav_bh_btn'>{{item.type}}</button>
+  </view>
+  <!-- 包含项目结束 -->
+
+  <!-- 页面导航区 -->
+    <view class='pageNavWrap'>
+      <view class='pageNav' wx:for="{{pageNav}}">
+        <navigator url="{{item.url}}" hover-class='none'>
+          <text>{{item.text}}</text>
+        </navigator>
+        <view class='clear'></view>
+      </view>
+    
+    </view>
+  <!-- 页面导航区结束 -->
+
+
+
+
+</view>

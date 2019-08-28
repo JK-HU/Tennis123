@@ -1,0 +1,183 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.2",
+	"appid": "wx1904439dbe46adb6",
+	"projectname": "Tennis123",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+<<<<<<< HEAD
+			"current": 12,
+=======
+			"current": 15,
+>>>>>>> 赛事小程序
+			"list": [
+				{
+					"id": -1,
+					"name": "单项赛",
+					"pathName": "Page/Nav/Individual/individual",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "单项赛_详情页",
+					"pathName": "Page/Nav/Individual_details/individual_details",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "单项赛_选手",
+					"pathName": "Page/Nav/Player/Individual_player",
+					"query": "",
+					"scene": null
+				},
+				{
+<<<<<<< HEAD
+					"id": -1,
+					"name": "战绩详情",
+					"pathName": "Page/Nav/RecordDetails/recorddetails",
+=======
+					"id": 3,
+					"name": "个人战绩",
+					"pathName": "Page/Nav/Record/Individual_record",
+>>>>>>> 赛事小程序
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "团队赛",
+					"pathName": "Page/Group/group",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "登录注册",
+					"pathName": "Page/Login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+<<<<<<< HEAD
+					"id": -1,
+					"name": "创建俱乐部",
+					"pathName": "Page/Club/CreateClub/createClub",
+=======
+					"id": 6,
+					"name": "创建俱乐部完成",
+					"pathName": "Page/Club/CreateComplete/createcomplete",
+>>>>>>> 赛事小程序
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "排行榜入口",
+					"pathName": "Page/Ranking/Entrance/entrance",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "查看比分",
+					"pathName": "Page/Nav/LookScore/lookscore",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "设置",
+					"pathName": "Page/Setting/setting",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "赛事列表导航页",
+					"pathName": "Page/Group/GroupNav/groupnav",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "签表",
+					"pathName": "Page/Group/GroupNav/Table/table",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 12,
+<<<<<<< HEAD
+					"name": "参赛记录",
+					"pathName": "Page/RecordsEntries/recordsentries",
+					"query": "",
+					"scene": null
+=======
+					"name": "创建赛事",
+					"pathName": "Page/RecordsEntries/recordsentries",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "赛事列表的录比分表格",
+					"pathName": "Page/Nav/RecordScoreDetails/recordscoredetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "支付页面",
+					"pathName": "Page/Nav/PayMent/payment",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Page/Club/VipAdmin/vipadmin",
+					"pathName": "Page/Club/VipAdmin/vipadmin",
+					"query": "",
+					"scene": null
+>>>>>>> 赛事小程序
+				}
+			]
+		}
+	}
+}
